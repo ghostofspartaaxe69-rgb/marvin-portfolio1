@@ -1,0 +1,105 @@
+/* ==========================================
+   GLOBAL VARIABLES
+========================================== */
+
+:root {
+
+    /* ========= COLORS ========= */
+
+    --primary: #2563EB;
+    --primary-dark: #1D4ED8;
+
+    --background: #07111F;
+    --surface: #0F172A;
+    --card: rgba(255,255,255,.04);
+
+    --white: #FFFFFF;
+    --light: #F8FAFC;
+
+    --text: #E5E7EB;
+    --text-light: #94A3B8;
+
+    --border: rgba(255,255,255,.08);
+
+    --success: #22C55E;
+    --warning: #FACC15;
+    --danger: #EF4444;
+
+    /* ========= TYPOGRAPHY ========= */
+
+    --font-family: "Inter", sans-serif;
+
+    --hero-title: 64px;
+
+    --section-title: 42px;
+
+    --heading: 30px;
+
+    --subheading: 24px;
+
+    --body-large: 20px;
+
+    --body: 18px;
+
+    --small: 15px;
+
+    --tiny: 13px;
+
+    /* ========= FONT WEIGHT ========= */
+
+    --light-weight:300;
+
+    --regular:400;
+
+    --medium:500;
+
+    --semibold:600;
+
+    --bold:700;
+
+    --extra-bold:800;
+
+    /* ========= SPACING ========= */
+
+    --section-padding:120px;
+
+    --container-width:1280px;
+
+    --gap-xs:8px;
+
+    --gap-sm:16px;
+
+    --gap-md:24px;
+
+    --gap-lg:40px;
+
+    --gap-xl:60px;
+
+    --gap-xxl:100px;
+
+    /* ========= BORDER ========= */
+
+    --radius-sm:8px;
+
+    --radius-md:14px;
+
+    --radius-lg:20px;
+
+    --radius-xl:30px;
+
+    /* ========= SHADOW ========= */
+
+    --shadow-small:
+    0 10px 25px rgba(0,0,0,.15);
+
+    --shadow-medium:
+    0 20px 45px rgba(0,0,0,.25);
+
+    --shadow-large:
+    0 30px 70px rgba(0,0,0,.35);
+
+    /* ========= TRANSITION ========= */
+
+    --transition:.35s ease;
+
+}

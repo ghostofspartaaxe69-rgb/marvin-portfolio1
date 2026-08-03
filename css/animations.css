@@ -1,0 +1,406 @@
+/* ==========================================
+   GLOBAL TRANSITIONS
+========================================== */
+
+*{
+
+    transition:
+    background .35s ease,
+    color .35s ease,
+    border-color .35s ease,
+    transform .35s ease,
+    box-shadow .35s ease;
+
+}
+
+
+
+/* ==========================================
+   FADE UP
+========================================== */
+
+.fade-up{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:all .8s ease;
+
+}
+
+.fade-up.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+
+/* ==========================================
+   FADE LEFT
+========================================== */
+
+.fade-left{
+
+    opacity:0;
+
+    transform:translateX(-50px);
+
+    transition:all .8s ease;
+
+}
+
+.fade-left.show{
+
+    opacity:1;
+
+    transform:translateX(0);
+
+}
+
+
+
+/* ==========================================
+   FADE RIGHT
+========================================== */
+
+.fade-right{
+
+    opacity:0;
+
+    transform:translateX(50px);
+
+    transition:all .8s ease;
+
+}
+
+.fade-right.show{
+
+    opacity:1;
+
+    transform:translateX(0);
+
+}
+
+
+
+/* ==========================================
+   ZOOM
+========================================== */
+
+.zoom{
+
+    opacity:0;
+
+    transform:scale(.9);
+
+    transition:all .8s ease;
+
+}
+
+.zoom.show{
+
+    opacity:1;
+
+    transform:scale(1);
+
+}
+
+
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.btn-primary{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.btn-primary::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-100%;
+
+    width:100%;
+
+    height:100%;
+
+    background:
+
+    rgba(255,255,255,.15);
+
+    transition:.5s;
+
+}
+
+.btn-primary:hover::before{
+
+    left:100%;
+
+}
+
+
+
+/* ==========================================
+   SERVICE CARDS
+========================================== */
+
+.service-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+
+
+/* ==========================================
+   TOOL CARDS
+========================================== */
+
+.tool-card:hover{
+
+    transform:translateY(-8px) scale(1.03);
+
+}
+
+
+
+/* ==========================================
+   PROJECT CARDS
+========================================== */
+
+.project-card{
+
+    overflow:hidden;
+
+}
+
+.project-card img{
+
+    transition:transform .5s ease;
+
+}
+
+.project-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+
+
+/* ==========================================
+   FEATURE CARDS
+========================================== */
+
+.feature-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+
+/* ==========================================
+   BADGES
+========================================== */
+
+.badge{
+
+    transition:.3s ease;
+
+}
+
+.badge:hover{
+
+    background:rgba(37,99,235,.12);
+
+    border-color:var(--primary);
+
+}
+
+
+
+/* ==========================================
+   CONTACT ICONS
+========================================== */
+
+.contact-item i{
+
+    transition:.3s ease;
+
+}
+
+.contact-item:hover i{
+
+    transform:scale(1.2);
+
+}
+
+
+
+/* ==========================================
+   IMAGE HOVER
+========================================== */
+
+.hero-right img,
+.about-image img,
+.project-preview img{
+
+    transition:.45s ease;
+
+}
+
+.hero-right img:hover,
+.about-image img:hover,
+.project-preview img:hover{
+
+    transform:scale(1.02);
+
+}
+
+
+
+/* ==========================================
+   NAVIGATION LINKS
+========================================== */
+
+.nav-links a{
+
+    position:relative;
+
+}
+
+.nav-links a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--primary);
+
+    transition:.35s;
+
+}
+
+.nav-links a:hover::after{
+
+    width:100%;
+
+}
+
+
+
+/* ==========================================
+   HERO TAG
+========================================== */
+
+.hero-tag{
+
+    animation:float 4s ease-in-out infinite;
+
+}
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-5px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+/* ==========================================
+   FADE IN
+========================================== */
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+.fade-in{
+
+    animation:fadeIn 1s ease;
+
+}
+
+
+
+/* ==========================================
+   HERO IMAGE FLOAT
+========================================== */
+
+@keyframes heroFloat{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.hero-right img{
+
+    animation:heroFloat 7s ease-in-out infinite;
+
+}
