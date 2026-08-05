@@ -64,11 +64,12 @@
                         </div>
                         <div class="solution-media">
                             <img src="../assets/projects/hubspot/hubspot-workflow.webp" alt="HubSpot workflow automation example">
+                            <button type="button" class="solution-media-trigger" data-gallery="crm" aria-label="Open CRM Workflow Template preview">Open preview</button>
                         </div>
                         <p class="solution-description">Automated workflow to nurture leads, send emails, and manage contacts efficiently.</p>
                         <div class="solution-card-footer">
                             <div class="solution-tags"><span>HubSpot</span><span>Workflow</span><span>Automation</span><span>CRM</span></div>
-                            <a href="contact.html" class="solution-link">View Preview <i class="fa-solid fa-arrow-right"></i></a>
+                            <button type="button" class="solution-link" data-gallery="crm">View Preview <i class="fa-solid fa-arrow-right"></i></button>
                         </div>
                     </article>
 
@@ -82,11 +83,12 @@
                         </div>
                         <div class="solution-media">
                             <img src="../assets/projects/lead-tracker/lead-tracker-sheet.webp" alt="Lead management spreadsheet example">
+                            <button type="button" class="solution-media-trigger" data-gallery="lead-tracker" aria-label="Open Lead Management Tracker preview">Open preview</button>
                         </div>
                         <p class="solution-description">Organized lead tracking system to manage prospects, follow-ups, and pipeline status.</p>
                         <div class="solution-card-footer">
                             <div class="solution-tags"><span>Google Sheets</span><span>Tracking</span><span>CRM</span><span>Reporting</span></div>
-                            <a href="contact.html" class="solution-link">View Preview <i class="fa-solid fa-arrow-right"></i></a>
+                            <button type="button" class="solution-link" data-gallery="lead-tracker">View Preview <i class="fa-solid fa-arrow-right"></i></button>
                         </div>
                     </article>
 
@@ -100,11 +102,12 @@
                         </div>
                         <div class="solution-media">
                             <img src="../assets/projects/customer-onboarding-sop/cover.webp" alt="Customer onboarding standard operating procedure example">
+                            <button type="button" class="solution-media-trigger" data-gallery="onboarding-sop" aria-label="Open Customer Onboarding SOP preview">Open preview</button>
                         </div>
                         <p class="solution-description">Step-by-step process documentation to ensure consistency, clarity, and efficient onboarding.</p>
                         <div class="solution-card-footer">
                             <div class="solution-tags"><span>SOP</span><span>Documentation</span><span>Process</span><span>Operations</span></div>
-                            <a href="contact.html" class="solution-link">View Preview <i class="fa-solid fa-arrow-right"></i></a>
+                            <button type="button" class="solution-link" data-gallery="onboarding-sop">View Preview <i class="fa-solid fa-arrow-right"></i></button>
                         </div>
                     </article>
 
@@ -120,11 +123,12 @@
                             <video autoplay muted loop playsinline aria-label="Social media video editing example">
                                 <source src="../assets/projects/video-editing/social-media-reel.mp4" type="video/mp4">
                             </video>
+                            <button type="button" class="solution-media-trigger" data-gallery="social-video" aria-label="Open Social Media Content Reel preview">Open preview</button>
                         </div>
                         <p class="solution-description">Engaging short-form social content designed to support regular brand communication.</p>
                         <div class="solution-card-footer">
                             <div class="solution-tags"><span>Content</span><span>Social Media</span><span>Video</span><span>Editing</span></div>
-                            <a href="contact.html" class="solution-link">View Preview <i class="fa-solid fa-arrow-right"></i></a>
+                            <button type="button" class="solution-link" data-gallery="social-video">View Preview <i class="fa-solid fa-arrow-right"></i></button>
                         </div>
                     </article>
 
@@ -138,11 +142,12 @@
                         </div>
                         <div class="solution-media">
                             <img src="../assets/projects/landing-page/homepage.webp" alt="Landing page design concept">
+                            <button type="button" class="solution-media-trigger" data-gallery="landing-page" aria-label="Open Landing Page Concept preview">Open preview</button>
                         </div>
                         <p class="solution-description">Clean and modern landing page concept designed to drive conversions and showcase your brand.</p>
                         <div class="solution-card-footer">
                             <div class="solution-tags"><span>Figma</span><span>UI/UX</span><span>Landing Page</span><span>Web Design</span></div>
-                            <a href="contact.html" class="solution-link">View Preview <i class="fa-solid fa-arrow-right"></i></a>
+                            <button type="button" class="solution-link" data-gallery="landing-page">View Preview <i class="fa-solid fa-arrow-right"></i></button>
                         </div>
                     </article>
 
@@ -156,11 +161,12 @@
                         </div>
                         <div class="solution-media">
                             <img src="../assets/projects/hubspot/hubspot-marketing-email.webp" alt="Email marketing campaign example">
+                            <button type="button" class="solution-media-trigger" data-gallery="email-campaign" aria-label="Open Email Marketing Campaign preview">Open preview</button>
                         </div>
                         <p class="solution-description">Branded email campaigns and automated sequences that help turn interest into action.</p>
                         <div class="solution-card-footer">
                             <div class="solution-tags"><span>Email</span><span>Campaign</span><span>Branding</span><span>Automation</span></div>
-                            <a href="contact.html" class="solution-link">View Preview <i class="fa-solid fa-arrow-right"></i></a>
+                            <button type="button" class="solution-link" data-gallery="email-campaign">View Preview <i class="fa-solid fa-arrow-right"></i></button>
                         </div>
                     </article>
                 </div>
@@ -176,6 +182,31 @@
         </section>
     </main>
 
+    <div class="solution-modal" id="solution-modal" hidden>
+        <div class="solution-modal-backdrop" data-modal-close></div>
+        <section class="solution-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="solution-modal-title">
+            <div class="solution-modal-header">
+                <div>
+                    <p class="solution-modal-kicker">Project Preview</p>
+                    <h2 id="solution-modal-title"></h2>
+                </div>
+                <button type="button" class="solution-modal-close" data-modal-close aria-label="Close preview"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+
+            <div class="solution-gallery">
+                <button type="button" class="solution-gallery-arrow solution-gallery-arrow--previous" aria-label="Show previous file"><i class="fa-solid fa-arrow-left"></i></button>
+                <div class="solution-gallery-stage"></div>
+                <button type="button" class="solution-gallery-arrow solution-gallery-arrow--next" aria-label="Show next file"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+            <div class="solution-gallery-meta">
+                <p class="solution-gallery-caption"></p>
+                <p class="solution-gallery-count" aria-live="polite"></p>
+            </div>
+            <div class="solution-gallery-thumbnails" aria-label="Preview files"></div>
+        </section>
+    </div>
+
     <footer>
         <div class="container">
             <p>&copy; 2026 Marvin Tinonas. All Rights Reserved.</p>
@@ -184,8 +215,166 @@
 
     <script src="../js/navigation.js"></script>
     <script src="../js/animations.js"></script>
-    <script src="../js/projects.js"></script>
-    <script src="../js/script.js"></script>
+<script src="../js/projects.js"></script>
+<script src="../js/script.js"></script>
+<script>
+    (() => {
+        const galleries = {
+            crm: {
+                title: 'CRM Workflow Template',
+                items: [
+                    { src: '../assets/projects/hubspot/hubspot-workflow.webp', alt: 'HubSpot workflow automation', caption: 'Workflow automation' },
+                    { src: '../assets/projects/hubspot/hubspot-dashboard.webp', alt: 'HubSpot dashboard', caption: 'CRM dashboard' },
+                    { src: '../assets/projects/hubspot/hubspot-marketing-email.webp', alt: 'HubSpot marketing email', caption: 'Marketing email' },
+                    { src: '../assets/projects/hubspot/hubspot-email-report.webp', alt: 'HubSpot email report', caption: 'Email report' }
+                ]
+            },
+            'lead-tracker': {
+                title: 'Lead Management Tracker',
+                items: [
+                    { src: '../assets/projects/lead-tracker/lead-tracker-sheet.webp', alt: 'Lead tracker spreadsheet', caption: 'Lead tracker spreadsheet' },
+                    { src: '../assets/projects/lead-tracker/lead-management-board.webp', alt: 'Lead management board', caption: 'Lead management board' }
+                ]
+            },
+            'onboarding-sop': {
+                title: 'Customer Onboarding SOP',
+                items: [
+                    { src: '../assets/projects/customer-onboarding-sop/cover.webp', alt: 'Customer onboarding SOP cover', caption: 'SOP cover' },
+                    { src: '../assets/projects/customer-onboarding-sop/overview.webp', alt: 'Customer onboarding overview', caption: 'Process overview' },
+                    { src: '../assets/projects/customer-onboarding-sop/onboarding-process.webp', alt: 'Customer onboarding process', caption: 'Onboarding process' },
+                    { src: '../assets/projects/customer-onboarding-sop/process-flow.webp', alt: 'Customer onboarding process flow', caption: 'Process flow' }
+                ]
+            },
+            'social-video': {
+                title: 'Social Media Content Reel',
+                items: [
+                    { src: '../assets/projects/video-editing/social-media-reel.mp4', type: 'video', caption: 'Social media reel' },
+                    { src: '../assets/projects/video-editing/promotional-video.mp4', type: 'video', caption: 'Promotional video' },
+                    { src: '../assets/projects/video-editing/motion-graphics.mp4', type: 'video', caption: 'Motion graphics' }
+                ]
+            },
+            'landing-page': {
+                title: 'Landing Page Concept',
+                items: [
+                    { src: '../assets/projects/landing-page/homepage.webp', alt: 'Landing page homepage', caption: 'Homepage' },
+                    { src: '../assets/projects/landing-page/menu.webp', alt: 'Landing page menu', caption: 'Menu page' },
+                    { src: '../assets/projects/landing-page/about.webp', alt: 'Landing page about section', caption: 'About page' },
+                    { src: '../assets/projects/landing-page/contact.webp', alt: 'Landing page contact section', caption: 'Contact page' },
+                    { src: '../assets/projects/landing-page/mobile.webp', alt: 'Landing page mobile layout', caption: 'Mobile layout' }
+                ]
+            },
+            'email-campaign': {
+                title: 'Email Marketing Campaign',
+                items: [
+                    { src: '../assets/projects/hubspot/hubspot-marketing-email.webp', alt: 'Marketing email', caption: 'Marketing email' },
+                    { src: '../assets/projects/hubspot/hubspot-email-report.webp', alt: 'Email campaign report', caption: 'Campaign report' },
+                    { src: '../assets/projects/hubspot/hubspot-dashboard.webp', alt: 'Campaign dashboard', caption: 'Campaign dashboard' }
+                ]
+            }
+        };
+
+        const modal = document.querySelector('#solution-modal');
+        const modalTitle = modal.querySelector('#solution-modal-title');
+        const stage = modal.querySelector('.solution-gallery-stage');
+        const caption = modal.querySelector('.solution-gallery-caption');
+        const count = modal.querySelector('.solution-gallery-count');
+        const thumbnails = modal.querySelector('.solution-gallery-thumbnails');
+        const previousButton = modal.querySelector('.solution-gallery-arrow--previous');
+        const nextButton = modal.querySelector('.solution-gallery-arrow--next');
+        let activeGallery;
+        let activeIndex = 0;
+        let triggerElement;
+
+        function renderGallery() {
+            const gallery = galleries[activeGallery];
+            const item = gallery.items[activeIndex];
+            modalTitle.textContent = gallery.title;
+            caption.textContent = item.caption;
+            count.textContent = `${activeIndex + 1} of ${gallery.items.length}`;
+            stage.replaceChildren();
+
+            const media = document.createElement(item.type === 'video' ? 'video' : 'img');
+            media.src = item.src;
+            media.className = 'solution-gallery-media';
+            if (item.type === 'video') {
+                media.controls = true;
+                media.autoplay = true;
+                media.playsInline = true;
+            } else {
+                media.alt = item.alt;
+            }
+            stage.append(media);
+
+            thumbnails.replaceChildren();
+            gallery.items.forEach((galleryItem, index) => {
+                const thumbnail = document.createElement('button');
+                thumbnail.type = 'button';
+                thumbnail.className = 'solution-gallery-thumbnail';
+                thumbnail.classList.toggle('is-active', index === activeIndex);
+                thumbnail.setAttribute('aria-label', `Show ${galleryItem.caption}`);
+                thumbnail.addEventListener('click', () => {
+                    activeIndex = index;
+                    renderGallery();
+                });
+
+                if (galleryItem.type === 'video') {
+                    thumbnail.innerHTML = '<i class="fa-solid fa-play"></i>';
+                } else {
+                    const image = document.createElement('img');
+                    image.src = galleryItem.src;
+                    image.alt = '';
+                    thumbnail.append(image);
+                }
+                thumbnails.append(thumbnail);
+            });
+
+            const hasMultipleItems = gallery.items.length > 1;
+            previousButton.hidden = !hasMultipleItems;
+            nextButton.hidden = !hasMultipleItems;
+        }
+
+        function openGallery(galleryId, trigger) {
+            activeGallery = galleryId;
+            activeIndex = 0;
+            triggerElement = trigger;
+            renderGallery();
+            modal.hidden = false;
+            document.body.classList.add('solution-modal-open');
+            modal.querySelector('.solution-modal-close').focus();
+        }
+
+        function closeGallery() {
+            if (modal.hidden) return;
+            modal.hidden = true;
+            document.body.classList.remove('solution-modal-open');
+            stage.replaceChildren();
+            triggerElement?.focus();
+        }
+
+        function moveGallery(direction) {
+            const items = galleries[activeGallery].items;
+            activeIndex = (activeIndex + direction + items.length) % items.length;
+            renderGallery();
+        }
+
+        document.querySelectorAll('[data-gallery]').forEach((trigger) => {
+            trigger.addEventListener('click', () => openGallery(trigger.dataset.gallery, trigger));
+        });
+
+        modal.querySelectorAll('[data-modal-close]').forEach((button) => {
+            button.addEventListener('click', closeGallery);
+        });
+        previousButton.addEventListener('click', () => moveGallery(-1));
+        nextButton.addEventListener('click', () => moveGallery(1));
+
+        document.addEventListener('keydown', (event) => {
+            if (modal.hidden) return;
+            if (event.key === 'Escape') closeGallery();
+            if (event.key === 'ArrowLeft') moveGallery(-1);
+            if (event.key === 'ArrowRight') moveGallery(1);
+        });
+    })();
+</script>
 </body>
 
 </html>
