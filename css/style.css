@@ -227,21 +227,22 @@ header {
 
 .hero-container {
 
-    width: 90%;
+    width: 94%;
 
-    max-width: var(--container-width);
+    max-width: 1500px;
 
     margin: auto;
 
     display: grid;
 
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 45% 55%;
 
-    gap: 70px;
+    gap: 35px;
 
     align-items: center;
 
 }
+
 
 .hero-tag {
 
@@ -287,7 +288,7 @@ header {
 
 .hero-left p {
 
-    max-width: 600px;
+    max-width: 520px;
 
     color: var(--text-light);
 
@@ -365,7 +366,7 @@ header {
 
     width: 100%;
 
-    max-width: 600px;
+    max-width: 900px;
 
     border-radius: var(--radius-lg);
 
@@ -1152,3 +1153,4 @@ footer p {
     font-size: var(--small);
 
 }
+
