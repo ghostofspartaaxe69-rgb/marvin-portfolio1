@@ -1215,7 +1215,7 @@ footer p {
 
 .solutions-eyebrow {
     margin-bottom: 10px;
-    color: #1d5cff;
+    color: #60a5fa;
     font-size: 14px;
     font-weight: 800;
     letter-spacing: 0.06em;
@@ -1225,19 +1225,19 @@ footer p {
 .solutions-intro h1 {
     max-width: 760px;
     margin-bottom: 14px;
-    color: #0c1832;
+    color: #f8fafc;
     font-size: clamp(2.45rem, 4vw, 4.1rem);
     line-height: 1.12;
     letter-spacing: -0.055em;
 }
 
 .solutions-intro h1 span {
-    color: #1d5cff;
+    color: #60a5fa;
 }
 
 .solutions-intro > p:last-child {
     max-width: 680px;
-    color: #40506f;
+    color: #cbd5e1;
     font-size: 18px;
     line-height: 1.55;
 }
