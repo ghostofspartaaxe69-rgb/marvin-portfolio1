@@ -1620,44 +1620,58 @@
                         as soon as possible.
                     </p>
 
-                    <form>
+<form
+    action="https://formspree.io/f/mvkpqgro"
+    method="POST"
+>
 
-                        <input
-                            type="text"
-                            placeholder="Full Name"
-                            required
-                        >
+    <input
+        type="hidden"
+        name="_subject"
+        value="New Portfolio Inquiry"
+    >
 
-                        <input
-                            type="email"
-                            placeholder="Email Address"
-                            required
-                        >
+    <input
+        type="text"
+        name="name"
+        placeholder="Full Name"
+        required
+    >
 
-                        <input
-                            type="text"
-                            placeholder="Company"
-                        >
+    <input
+        type="email"
+        name="email"
+        placeholder="Email Address"
+        required
+    >
 
-                        <input
-                            type="text"
-                            placeholder="Subject"
-                        >
+    <input
+        type="text"
+        name="company"
+        placeholder="Company"
+    >
 
-                        <textarea
-                            rows="7"
-                            placeholder="Tell me about your project..."
-                            required
-                        ></textarea>
+    <input
+        type="text"
+        name="subject"
+        placeholder="Subject"
+    >
 
-                        <button
-                            type="submit"
-                            class="btn-primary"
-                        >
-                            Send Message
-                        </button>
+    <textarea
+        name="message"
+        rows="7"
+        placeholder="Tell me about your project..."
+        required
+    ></textarea>
 
-                    </form>
+    <button
+        type="submit"
+        class="btn-primary"
+    >
+        Send Message
+    </button>
+
+</form>
 
                 </div>
 
