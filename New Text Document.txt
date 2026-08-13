@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Marvin Tinonas | CRM • Operations • Marketing</title>
+    <title>Marvin Tinonas | CRM Operations Marketing</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/variables.css">
@@ -23,51 +23,22 @@
 </head>
 
 <body>
-
-    <!-- ========================= -->
-    <!-- Navigation -->
-    <!-- ========================= -->
-
     <header>
-
         <nav class="navbar">
-
             <div class="logo">
-                <img src="assets/images/branding/logo.png" alt="Marvin Tinonas Logo">
+                <a href="#hero"><img src="assets/images/branding/logo.png" alt="Marvin Tinonas Logo"></a>
             </div>
-<ul class="nav-links">
-
-    <li><a href="#hero" class="active">Home</a></li>
-
-    <li><a href="#services">Services</a></li>
-
-    <li><a href="#tools">Tools</a></li>
-
-    <li><a href="pages/about.html">About</a></li>
-
-    <li><a href="pages/contact.html">Contact</a></li>
-
-</ul>
-
-        
-<a href="pages/contact.html" class="btn-primary">
-    Let's Work Together
-</a>
-
-</nav>
-
-</header>
-
-
-
-
-
-
-    <!-- ========================= -->
-    <!-- HERO -->
-    <!-- ========================= -->
-
-    <section id="hero">
+            <ul class="nav-links">
+                <li><a href="#hero" class="active">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#contact" class="btn-primary">Let's Work Together</a>
+        </nav>
+    </header>
+<section id="hero">
 
         <div class="hero-background" aria-hidden="true">
             <img
@@ -84,7 +55,7 @@
             <div class="hero-left">
 
                 <span class="hero-tag">
-                    CRM • OPERATIONS • ADMINISTRATION • MARKETING
+                    CRM | OPERATIONS | ADMINISTRATION | MARKETING
                 </span>
 
                 <h1>
@@ -156,13 +127,13 @@
 
                 <div class="hero-buttons">
 
-                  <a href="pages/services.html" class="btn-primary">
+                  <a href="#services" class="btn-primary">
 
     View My Work
 
 </a>
 
-                    <a href="assets/cv/Marvin-Tinonas-CV.pdf" class="btn-secondary">
+                    <a href="assets/document/Marvintinonas.pdf" class="btn-secondary" download>
 
                         Download CV
 
@@ -180,51 +151,6 @@
 
     </section>
 
-
-
-
-
-
-    <!-- ========================= -->
-    <!-- SERVICES -->
-    <!-- ========================= -->
-
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services | Marvin Tinonas</title>
-
-    <link rel="stylesheet" href="../css/variables.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/responsive.css">
-    <link rel="stylesheet" href="../css/animations.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-</head>
-
-<body class="solutions-page">
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <a href="../index.html">
-                    <img src="../assets/images/branding/logo.png" alt="Marvin Tinonas Logo">
-                </a>
-            </div>
-
-            <ul class="nav-links">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="services.html" class="active">Services</a></li>
-                <li><a href="../index.html#tools">Tools</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-
-            <a href="contact.html" class="btn-primary">Let's Work Together</a>
-        </nav>
-    </header>
-
-    <main>
         <section id="services" class="solutions-hero">
             <div class="solutions-shell">
                 <div class="solutions-intro">
@@ -252,7 +178,7 @@
                             </div>
                         </div>
                         <div class="solution-media">
-                            <img src="../assets/projects/hubspot/hubspot-workflow.webp" alt="HubSpot workflow automation example">
+                            <img src="assets/projects/hubspot/hubspot-workflow.webp" alt="HubSpot workflow automation example">
                             <button type="button" class="solution-media-trigger" data-gallery="crm" aria-label="Open CRM Workflow Template preview">Open preview</button>
                         </div>
                         <p class="solution-description">Automated workflow to nurture leads, send emails, and manage contacts efficiently.</p>
@@ -271,7 +197,7 @@
                             </div>
                         </div>
                         <div class="solution-media">
-                            <img src="../assets/projects/lead-tracker/lead-tracker-sheet.webp" alt="Lead management spreadsheet example">
+                            <img src="assets/projects/lead-tracker/lead-tracker-sheet.webp" alt="Lead management spreadsheet example">
                             <button type="button" class="solution-media-trigger" data-gallery="lead-tracker" aria-label="Open Lead Management Tracker preview">Open preview</button>
                         </div>
                         <p class="solution-description">Organized lead tracking system to manage prospects, follow-ups, and pipeline status.</p>
@@ -290,7 +216,7 @@
                             </div>
                         </div>
                         <div class="solution-media">
-                            <img src="../assets/projects/customer-onboarding-sop/cover.webp" alt="Customer onboarding standard operating procedure example">
+                            <img src="assets/projects/customer-onboarding-sop/cover.webp" alt="Customer onboarding standard operating procedure example">
                             <button type="button" class="solution-media-trigger" data-gallery="onboarding-sop" aria-label="Open Customer Onboarding SOP preview">Open preview</button>
                         </div>
                         <p class="solution-description">Step-by-step process documentation to ensure consistency, clarity, and efficient onboarding.</p>
@@ -310,7 +236,7 @@
                         </div>
                         <div class="solution-media">
                             <video autoplay muted loop playsinline aria-label="Social media video editing example">
-                                <source src="../assets/projects/video-editing/social-media-reel.mp4" type="video/mp4">
+                                <source src="assets/projects/video-editing/social-media-reel.mp4" type="video/mp4">
                             </video>
                             <button type="button" class="solution-media-trigger" data-gallery="social-video" aria-label="Open Social Media Content Reel preview">Open preview</button>
                         </div>
@@ -330,7 +256,7 @@
                             </div>
                         </div>
                         <div class="solution-media">
-                            <img src="../assets/projects/landing-page/homepage.webp" alt="Landing page design concept">
+                            <img src="assets/projects/landing-page/homepage.webp" alt="Landing page design concept">
                             <button type="button" class="solution-media-trigger" data-gallery="landing-page" aria-label="Open Landing Page Concept preview">Open preview</button>
                         </div>
                         <p class="solution-description">Clean and modern landing page concept designed to drive conversions and showcase your brand.</p>
@@ -349,7 +275,7 @@
                             </div>
                         </div>
                         <div class="solution-media">
-                            <img src="../assets/projects/hubspot/hubspot-marketing-email.webp" alt="Email marketing campaign example">
+                            <img src="assets/projects/hubspot/hubspot-marketing-email.webp" alt="Email marketing campaign example">
                             <button type="button" class="solution-media-trigger" data-gallery="email-campaign" aria-label="Open Email Marketing Campaign preview">Open preview</button>
                         </div>
                         <p class="solution-description">Branded email campaigns and automated sequences that help turn interest into action.</p>
@@ -366,298 +292,117 @@
             <div class="solutions-cta-content">
                 <span class="solutions-cta-icon"><i class="fa-regular fa-star"></i></span>
                 <p>These are just examples of what I can build. Let's create the right solution for your business.</p>
-                <a href="contact.html" class="btn-primary">Let's Work Together</a>
+                <a href="#contact" class="btn-primary">Let's Work Together</a>
             </div>
         </section>
-    </main>
+    
 
-    <div class="solution-modal" id="solution-modal" hidden>
-        <div class="solution-modal-backdrop" data-modal-close></div>
-        <section class="solution-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="solution-modal-title">
-            <div class="solution-modal-header">
-                <div>
-                    <p class="solution-modal-kicker">Project Preview</p>
-                    <h2 id="solution-modal-title"></h2>
-                </div>
-                <button type="button" class="solution-modal-close" data-modal-close aria-label="Close preview"><i class="fa-solid fa-xmark"></i></button>
-            </div>
 
-            <div class="solution-gallery">
-                <button type="button" class="solution-gallery-arrow solution-gallery-arrow--previous" aria-label="Show previous file"><i class="fa-solid fa-arrow-left"></i></button>
-                <div class="solution-gallery-stage"></div>
-                <button type="button" class="solution-gallery-arrow solution-gallery-arrow--next" aria-label="Show next file"><i class="fa-solid fa-arrow-right"></i></button>
-            </div>
 
-            <div class="solution-gallery-meta">
-                <p class="solution-gallery-caption"></p>
-                <p class="solution-gallery-count" aria-live="polite"></p>
-            </div>
-            <div class="solution-gallery-thumbnails" aria-label="Preview files"></div>
-        </section>
-    </div>
 
-    <footer>
+
+
+    <!-- ========================= -->
+    <!-- TOOLS -->
+    <!-- ========================= -->
+
+    <section id="tools" class="tools-section">
+
         <div class="container">
-            <p>&copy; 2026 Marvin Tinonas. All Rights Reserved.</p>
-        </div>
-    </footer>
 
-    <script src="../js/navigation.js"></script>
-    <script src="../js/animations.js"></script>
-<script src="../js/projects.js"></script>
-<script src="../js/script.js"></script>
-<script>
-    (() => {
-        const galleries = {
-            crm: {
-                title: 'CRM Workflow Template',
-                items: [
-                    { src: '../assets/projects/hubspot/hubspot-workflow.webp', alt: 'HubSpot workflow automation', caption: 'Workflow automation' },
-                    { src: '../assets/projects/hubspot/hubspot-dashboard.webp', alt: 'HubSpot dashboard', caption: 'CRM dashboard' },
-                    { src: '../assets/projects/hubspot/hubspot-marketing-email.webp', alt: 'HubSpot marketing email', caption: 'Marketing email' },
-                    { src: '../assets/projects/hubspot/hubspot-email-report.webp', alt: 'HubSpot email report', caption: 'Email report' }
-                ]
-            },
-            'lead-tracker': {
-                title: 'Lead Management Tracker',
-                items: [
-                    { src: '../assets/projects/lead-tracker/lead-tracker-sheet.webp', alt: 'Lead tracker spreadsheet', caption: 'Lead tracker spreadsheet' },
-                    { src: '../assets/projects/lead-tracker/lead-management-board.webp', alt: 'Lead management board', caption: 'Lead management board' }
-                ]
-            },
-            'onboarding-sop': {
-                title: 'Customer Onboarding SOP',
-                items: [
-                    { src: '../assets/projects/customer-onboarding-sop/cover.webp', alt: 'Customer onboarding SOP cover', caption: 'SOP cover' },
-                    { src: '../assets/projects/customer-onboarding-sop/overview.webp', alt: 'Customer onboarding overview', caption: 'Process overview' },
-                    { src: '../assets/projects/customer-onboarding-sop/onboarding-process.webp', alt: 'Customer onboarding process', caption: 'Onboarding process' },
-                    { src: '../assets/projects/customer-onboarding-sop/process-flow.webp', alt: 'Customer onboarding process flow', caption: 'Process flow' }
-                ]
-            },
-            'social-video': {
-                title: 'Social Media Content Reel',
-                items: [
-                    { src: '../assets/projects/video-editing/social-media-reel.mp4', type: 'video', caption: 'Social media reel' },
-                    { src: '../assets/projects/video-editing/promotional-video.mp4', type: 'video', caption: 'Promotional video' },
-                    { src: '../assets/projects/video-editing/motion-graphics.mp4', type: 'video', caption: 'Motion graphics' }
-                ]
-            },
-            'landing-page': {
-                title: 'Landing Page Concept',
-                items: [
-                    { src: '../assets/projects/landing-page/homepage.webp', alt: 'Landing page homepage', caption: 'Homepage' },
-                    { src: '../assets/projects/landing-page/menu.webp', alt: 'Landing page menu', caption: 'Menu page' },
-                    { src: '../assets/projects/landing-page/about.webp', alt: 'Landing page about section', caption: 'About page' },
-                    { src: '../assets/projects/landing-page/contact.webp', alt: 'Landing page contact section', caption: 'Contact page' },
-                    { src: '../assets/projects/landing-page/mobile.webp', alt: 'Landing page mobile layout', caption: 'Mobile layout' }
-                ]
-            },
-            'email-campaign': {
-                title: 'Email Marketing Campaign',
-                items: [
-                    { src: '../assets/projects/hubspot/hubspot-marketing-email.webp', alt: 'Marketing email', caption: 'Marketing email' },
-                    { src: '../assets/projects/hubspot/hubspot-email-report.webp', alt: 'Email campaign report', caption: 'Campaign report' },
-                    { src: '../assets/projects/hubspot/hubspot-dashboard.webp', alt: 'Campaign dashboard', caption: 'Campaign dashboard' }
-                ]
-            }
-        };
+            <h2>
 
-        const modal = document.querySelector('#solution-modal');
-        const modalTitle = modal.querySelector('#solution-modal-title');
-        const stage = modal.querySelector('.solution-gallery-stage');
-        const caption = modal.querySelector('.solution-gallery-caption');
-        const count = modal.querySelector('.solution-gallery-count');
-        const thumbnails = modal.querySelector('.solution-gallery-thumbnails');
-        const previousButton = modal.querySelector('.solution-gallery-arrow--previous');
-        const nextButton = modal.querySelector('.solution-gallery-arrow--next');
-        let activeGallery;
-        let activeIndex = 0;
-        let triggerElement;
+                Tools I Work With
 
-        function renderGallery() {
-            const gallery = galleries[activeGallery];
-            const item = gallery.items[activeIndex];
-            modalTitle.textContent = gallery.title;
-            caption.textContent = item.caption;
-            count.textContent = `${activeIndex + 1} of ${gallery.items.length}`;
-            stage.replaceChildren();
+            </h2>
 
-            const media = document.createElement(item.type === 'video' ? 'video' : 'img');
-            media.src = item.src;
-            media.className = 'solution-gallery-media';
-            if (item.type === 'video') {
-                media.controls = true;
-                media.autoplay = true;
-                media.playsInline = true;
-            } else {
-                media.alt = item.alt;
-            }
-            stage.append(media);
+            <div class="expertise-grid">
 
-            thumbnails.replaceChildren();
-            gallery.items.forEach((galleryItem, index) => {
-                const thumbnail = document.createElement('button');
-                thumbnail.type = 'button';
-                thumbnail.className = 'solution-gallery-thumbnail';
-                thumbnail.classList.toggle('is-active', index === activeIndex);
-                thumbnail.setAttribute('aria-label', `Show ${galleryItem.caption}`);
-                thumbnail.addEventListener('click', () => {
-                    activeIndex = index;
-                    renderGallery();
-                });
+                <div class="expertise-card">
+    <img src="assets/images/tools logo/Hubspot.png" alt="HubSpot">
+    <span>HubSpot</span>
+</div>
 
-                if (galleryItem.type === 'video') {
-                    thumbnail.innerHTML = '<i class="fa-solid fa-play"></i>';
-                } else {
-                    const image = document.createElement('img');
-                    image.src = galleryItem.src;
-                    image.alt = '';
-                    thumbnail.append(image);
-                }
-                thumbnails.append(thumbnail);
-            });
+<div class="expertise-card">
+    <img src="assets/images/tools logo/Monday.com.png" alt="Monday.com">
+    <span>Monday.com</span>
+</div>
 
-            const hasMultipleItems = gallery.items.length > 1;
-            previousButton.hidden = !hasMultipleItems;
-            nextButton.hidden = !hasMultipleItems;
-        }
+<div class="expertise-card">
+    <img src="assets/images/tools logo/Asana.png" alt="Asana">
+    <span>Asana</span>
+</div>
 
-        function openGallery(galleryId, trigger) {
-            activeGallery = galleryId;
-            activeIndex = 0;
-            triggerElement = trigger;
-            renderGallery();
-            modal.hidden = false;
-            document.body.classList.add('solution-modal-open');
-            modal.querySelector('.solution-modal-close').focus();
-        }
+<div class="expertise-card">
+    <img src="assets/images/tools logo/Trello.png" alt="Trello">
+    <span>Trello</span>
+</div>
 
-        function closeGallery() {
-            if (modal.hidden) return;
-            modal.hidden = true;
-            document.body.classList.remove('solution-modal-open');
-            stage.replaceChildren();
-            triggerElement?.focus();
-        }
+<div class="expertise-card">
+    <img src="assets/images/tools logo/Slack.png" alt="Slack">
+    <span>Slack</span>
+</div>
 
-        function moveGallery(direction) {
-            const items = galleries[activeGallery].items;
-            activeIndex = (activeIndex + direction + items.length) % items.length;
-            renderGallery();
-        }
+<div class="expertise-card">
+    <img src="assets/images/tools logo/Microsoftoffice.png" alt="Microsoft Office">
+    <span>Microsoft Office</span>
+</div>
 
-        document.querySelectorAll('[data-gallery]').forEach((trigger) => {
-            trigger.addEventListener('click', () => openGallery(trigger.dataset.gallery, trigger));
-        });
+<div class="expertise-card">
+    <img src="assets/images/tools logo/Excel.png" alt="Excel">
+    <span>Excel</span>
+</div>
 
-        modal.querySelectorAll('[data-modal-close]').forEach((button) => {
-            button.addEventListener('click', closeGallery);
-        });
-        previousButton.addEventListener('click', () => moveGallery(-1));
-        nextButton.addEventListener('click', () => moveGallery(1));
+<div class="expertise-card">
+    <img src="assets/images/tools logo/Googleworkspace.png" alt="Google Workspace">
+    <span>Google Workspace</span>
+</div>
 
-        document.addEventListener('keydown', (event) => {
-            if (modal.hidden) return;
-            if (event.key === 'Escape') closeGallery();
-            if (event.key === 'ArrowLeft') moveGallery(-1);
-            if (event.key === 'ArrowRight') moveGallery(1);
-        });
-    })();
-</script>
-</body>
+<div class="expertise-card">
+    <img src="assets/images/tools logo/Canva.png" alt="Canva">
+    <span>Canva</span>
+</div>
 
-</html>
+<div class="expertise-card">
+    <img src="assets/images/tools logo/Wordpress.png" alt="WordPress">
+    <span>WordPress</span>
+</div>
 
+<div class="expertise-card">
+    <img src="assets/images/tools logo/Metabusiness.png" alt="Meta Business Suite">
+    <span>Meta Business Suite</span>
+</div>
 
-    <!-- ========================= -->
-    <!-- WHAT I CAN BUILD -->
-    <!-- ========================= -->
+<div class="expertise-card">
+    <img src="assets/images/tools logo/Chatgpt.png" alt="ChatGPT">
+    <span>ChatGPT</span>
+</div>
 
-   <!-- ========================= -->
+<div class="expertise-card">
+    <img src="assets/images/tools logo/Zoom.png" alt="Zoom">
+    <span>Zoom</span>
+</div>
 
+<div class="expertise-card">
+    <img src="assets/images/tools logo/LinkedinNavigator.png" alt="LinkedIn Sales Navigator">
+    <span>LinkedIn Sales Navigator</span>
+</div>
 
+<div class="expertise-card">
+    <img src="assets/images/tools logo/Shopify.png" alt="Shopify">
+    <span>Shopify</span>
+</div>
 
-
-    <!-- ========================= -->
-    <!-- ABOUT -->
-    <!-- ========================= -->
-
-
-<head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>About | Marvin Tinonas</title>
-
-    <!-- CSS -->
-
-    <link rel="stylesheet" href="../css/variables.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/responsive.css">
-    <link rel="stylesheet" href="../css/animations.css">
-
-    <!-- Font Awesome -->
-
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
-    <!-- Google Font -->
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-
-</head>
-
-<body>
-
-    <!-- ========================= -->
-    <!-- Navigation -->
-    <!-- ========================= -->
-
-    <header>
-
-        <nav class="navbar">
-
-            <div class="logo">
-
-                <a href="../index.html">
-
-                    <img src="../assets/logo/logo.png"
-                        alt="Marvin Tinonas Logo">
-
-                </a>
+<div class="expertise-card">
+    <img src="assets/images/tools logo/Capcut.png" alt="CapCut">
+    <span>CapCut</span>
+</div>
 
             </div>
-<ul class="nav-links">
 
-    <li><a href="#hero" class="active">Home</a></li>
+        </div>
 
-    <li><a href="#services">Services</a></li>
-
-    <li><a href="#tools">Tools</a></li>
-
-    <li><a href="#about">About</a></li>
-
-    <li><a href="#contact">Contact</a></li>
-
-</ul>
-
-<a href="#contact" class="btn-primary">
-    Let's Work Together
-</a>
-
-        </nav>
-
-    </header>
-
-
-
-
-
-    <!-- ========================= -->
-    <!-- PAGE HERO -->
-    <!-- ========================= -->
+    </section>
 
     <section class="page-hero">
 
@@ -705,7 +450,7 @@
     <!-- ABOUT -->
     <!-- ========================= -->
 
-    <section class="about-page">
+    <section id="about" class="about-page">
 
         <div class="container">
 
@@ -713,7 +458,7 @@
 
                 <div class="about-image">
 
-                    <img src="../assets/about/about-image.jpg"
+                    <img src="assets/images/branding/professional.png"
                         alt="Marvin Tinonas">
 
                 </div>
@@ -770,7 +515,8 @@
 
                     </p>
 
-                    <a href="../assets/cv/Marvin-Tinonas-CV.pdf"
+                    <a href="assets/document/Marvintinonas.pdf"
+                        download
                         class="btn-primary">
 
                         Download CV
@@ -1056,112 +802,6 @@
 
 
     <!-- ========================= -->
-    <!-- TOOLS -->
-    <!-- ========================= -->
-
-    <section class="tools-section">
-
-        <div class="container">
-
-            <h2>
-
-                Tools I Work With
-
-            </h2>
-
-            <div class="expertise-grid">
-
-                <div class="expertise-card">
-    <img src="../assets/images/tools logo/Hubspot.png" alt="HubSpot">
-    <span>HubSpot</span>
-</div>
-
-<div class="expertise-card">
-    <img src="../assets/images/tools logo/Monday.com.png" alt="Monday.com">
-    <span>Monday.com</span>
-</div>
-
-<div class="expertise-card">
-    <img src="../assets/images/tools logo/Asana.png" alt="Asana">
-    <span>Asana</span>
-</div>
-
-<div class="expertise-card">
-    <img src="../assets/images/tools logo/Trello.png" alt="Trello">
-    <span>Trello</span>
-</div>
-
-<div class="expertise-card">
-    <img src="../assets/images/tools logo/Slack.png" alt="Slack">
-    <span>Slack</span>
-</div>
-
-<div class="expertise-card">
-    <img src="../assets/images/tools logo/Microsoftoffice.png" alt="Microsoft Office">
-    <span>Microsoft Office</span>
-</div>
-
-<div class="expertise-card">
-    <img src="../assets/images/tools logo/Excel.png" alt="Excel">
-    <span>Excel</span>
-</div>
-
-<div class="expertise-card">
-    <img src="../assets/images/tools logo/Googleworkspace.png" alt="Google Workspace">
-    <span>Google Workspace</span>
-</div>
-
-<div class="expertise-card">
-    <img src="../assets/images/tools logo/Canva.png" alt="Canva">
-    <span>Canva</span>
-</div>
-
-<div class="expertise-card">
-    <img src="../assets/images/tools logo/Wordpress.png" alt="WordPress">
-    <span>WordPress</span>
-</div>
-
-<div class="expertise-card">
-    <img src="../assets/images/tools logo/Metabusiness.png" alt="Meta Business Suite">
-    <span>Meta Business Suite</span>
-</div>
-
-<div class="expertise-card">
-    <img src="../assets/images/tools logo/Chatgpt.png" alt="ChatGPT">
-    <span>ChatGPT</span>
-</div>
-
-<div class="expertise-card">
-    <img src="../assets/images/tools logo/Zoom.png" alt="Zoom">
-    <span>Zoom</span>
-</div>
-
-<div class="expertise-card">
-    <img src="../assets/images/tools logo/LinkedinNavigator.png" alt="LinkedIn Sales Navigator">
-    <span>LinkedIn Sales Navigator</span>
-</div>
-
-<div class="expertise-card">
-    <img src="../assets/images/tools logo/Shopify.png" alt="Shopify">
-    <span>Shopify</span>
-</div>
-
-<div class="expertise-card">
-    <img src="../assets/images/tools logo/Capcut.png" alt="CapCut">
-    <span>CapCut</span>
-</div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-
-
-    <!-- ========================= -->
     <!-- PHILOSOPHY -->
     <!-- ========================= -->
 
@@ -1208,119 +848,8 @@
     <!-- FOOTER -->
     <!-- ========================= -->
 
-    <footer>
-
-        <div class="container">
-
-            <p>
-
-
-
-    <!-- JavaScript -->
-
-    <script src="../js/navigation.js"></script>
-    <script src="../js/animations.js"></script>
-    <script src="../js/projects.js"></script>
-    <script src="../js/script.js"></script>
-
-</body>
-
-</html>
-
-
-
-
-
-
-
-    <!-- ========================= -->
-    <!-- CONTACT -->
-    <!-- ========================= -->
-
-
-<head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Contact | Marvin Tinonas</title>
-
-    <!-- CSS -->
-
-    <link rel="stylesheet" href="../css/variables.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/responsive.css">
-    <link rel="stylesheet" href="../css/animations.css">
-
-    <!-- Font Awesome -->
-
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
-    <!-- Google Font -->
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-
-</head>
-
-<body>
-
-    <!-- ========================= -->
-    <!-- Navigation -->
-    <!-- ========================= -->
-
-    <header>
-
-        <nav class="navbar">
-
-            <div class="logo">
-
-                <a href="../index.html">
-
-                    <img src="../assets/logo/logo.png"
-                        alt="Marvin Tinonas Logo">
-
-                </a>
-
-            </div>
-
-            <ul class="nav-links">
-
-                <li><a href="../index.html">Home</a></li>
-
-                <li><a href="../index.html#services">Services</a></li>
-
-                <li><a href="../index.html#tools">Tools</a></li>
-
-                <li><a href="../index.html#projects">Projects</a></li>
-
-                <li><a href="about.html">About</a></li>
-
-                <li><a href="contact.html" class="active">Contact</a></li>
-
-            </ul>
-
-            <a href="contact.html"
-                class="btn-primary">
-
-                Let's Work Together
-
-            </a>
-
-        </nav>
-
-    </header>
-
-
-
-
-
-    <!-- ========================= -->
-    <!-- HERO -->
-    <!-- ========================= -->
-
-    <section class="page-hero">
+    
+<section class="page-hero">
 
         <div class="container">
 
@@ -1364,7 +893,7 @@
     <!-- CONTACT -->
     <!-- ========================= -->
 
-    <section class="contact-page">
+    <section id="contact" class="contact-page">
 
         <div class="container">
 
@@ -1401,25 +930,7 @@
 
                             <span>
 
-                                your@email.com
-
-                            </span>
-
-                        </div>
-
-                    </div>
-
-                    <div class="contact-item">
-
-                        <i class="fa-brands fa-linkedin"></i>
-
-                        <div>
-
-                            <h4>LinkedIn</h4>
-
-                            <span>
-
-                                linkedin.com/in/yourprofile
+                                m.tinonas21@gmail.com
 
                             </span>
 
@@ -1442,23 +953,6 @@
                             </span>
 
                         </div>
-
-                    </div>
-
-                    <div class="contact-item">
-
-                        <i class="fa-brands fa-facebook"></i>
-
-                        <div>
-
-                            <h4>Facebook</h4>
-
-                            <span>
-
-                                facebook.com/yourprofile
-
-                            </span>
-
                         </div>
 
                     </div>
@@ -1481,7 +975,8 @@
 
                     </div>
 
-                    <a href="../assets/cv/Marvin-Tinonas-CV.pdf"
+                    <a href="assets/document/Marvintinonas.pdf"
+                        download
 
                         class="btn-primary">
 
@@ -1655,7 +1150,7 @@
 
             </p>
 
-            <a href="mailto:your@email.com"
+            <a href="mailto:m.tinonas21@gmail.com"
 
                 class="btn-primary">
 
@@ -1675,63 +1170,195 @@
     <!-- FOOTER -->
     <!-- ========================= -->
 
+    
+<div class="solution-modal" id="solution-modal" hidden>
+        <div class="solution-modal-backdrop" data-modal-close></div>
+        <section class="solution-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="solution-modal-title">
+            <div class="solution-modal-header">
+                <div>
+                    <p class="solution-modal-kicker">Project Preview</p>
+                    <h2 id="solution-modal-title"></h2>
+                </div>
+                <button type="button" class="solution-modal-close" data-modal-close aria-label="Close preview"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+
+            <div class="solution-gallery">
+                <button type="button" class="solution-gallery-arrow solution-gallery-arrow--previous" aria-label="Show previous file"><i class="fa-solid fa-arrow-left"></i></button>
+                <div class="solution-gallery-stage"></div>
+                <button type="button" class="solution-gallery-arrow solution-gallery-arrow--next" aria-label="Show next file"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+            <div class="solution-gallery-meta">
+                <p class="solution-gallery-caption"></p>
+                <p class="solution-gallery-count" aria-live="polite"></p>
+            </div>
+            <div class="solution-gallery-thumbnails" aria-label="Preview files"></div>
+        </section>
+    </div>
     <footer>
-
-        <div class="container">
-
-            <p>
-
-                © 2026 Marvin Tinonas.
-                All Rights Reserved.
-
-            </p>
-
-        </div>
-
+        <div class="container"><p>&copy; 2026 Marvin Tinonas. All Rights Reserved.</p></div>
     </footer>
-
-
-
-
-
-    <!-- JavaScript -->
-
-    <script src="../js/navigation.js"></script>
-    <script src="../js/animations.js"></script>
-    <script src="../js/projects.js"></script>
-    <script src="../js/script.js"></script>
-
-</body>
-
-</html>
-
-
-
-
-
-    <!-- ========================= -->
-    <!-- FOOTER -->
-    <!-- ========================= -->
-
-    <footer>
-
-    </footer>
-
-
-
-
-
-    <!-- Javascript -->
-
     <script src="js/navigation.js"></script>
     <script src="js/animations.js"></script>
     <script src="js/projects.js"></script>
     <script src="js/script.js"></script>
+<script>
+    (() => {
+        const galleries = {
+            crm: {
+                title: 'CRM Workflow Template',
+                items: [
+                { src: 'assets/projects/hubspot/hubspot-workflow.webp', alt: 'HubSpot workflow automation', caption: 'Workflow automation' },
+                { src: 'assets/projects/hubspot/hubspot-dashboard.webp', alt: 'HubSpot dashboard', caption: 'CRM dashboard' },
+                { src: 'assets/projects/hubspot/hubspot-marketing-email.webp', alt: 'HubSpot marketing email', caption: 'Marketing email' },
+                { src: 'assets/projects/hubspot/hubspot-email-report.webp', alt: 'HubSpot email report', caption: 'Email report' }
+                ]
+            },
+            'lead-tracker': {
+                title: 'Lead Management Tracker',
+                items: [
+                { src: 'assets/projects/lead-tracker/lead-tracker-sheet.webp', alt: 'Lead tracker spreadsheet', caption: 'Lead tracker spreadsheet' },
+                { src: 'assets/projects/lead-tracker/lead-management-board.webp', alt: 'Lead management board', caption: 'Lead management board' }
+                ]
+            },
+            'onboarding-sop': {
+                title: 'Customer Onboarding SOP',
+                items: [
+                { src: 'assets/projects/customer-onboarding-sop/cover.webp', alt: 'Customer onboarding SOP cover', caption: 'SOP cover' },
+                { src: 'assets/projects/customer-onboarding-sop/overview.webp', alt: 'Customer onboarding overview', caption: 'Process overview' },
+                { src: 'assets/projects/customer-onboarding-sop/onboarding-process.webp', alt: 'Customer onboarding process', caption: 'Onboarding process' },
+                { src: 'assets/projects/customer-onboarding-sop/process-flow.webp', alt: 'Customer onboarding process flow', caption: 'Process flow' }
+                ]
+            },
+            'social-video': {
+                title: 'Social Media Content Reel',
+                items: [
+                { src: 'assets/projects/video-editing/social-media-reel.mp4', type: 'video', caption: 'Social media reel' },
+                { src: 'assets/projects/video-editing/promotional-video.mp4', type: 'video', caption: 'Promotional video' },
+                { src: 'assets/projects/video-editing/motion-graphics.mp4', type: 'video', caption: 'Motion graphics' }
+                ]
+            },
+            'landing-page': {
+                title: 'Landing Page Concept',
+                items: [
+                { src: 'assets/projects/landing-page/homepage.webp', alt: 'Landing page homepage', caption: 'Homepage' },
+                { src: 'assets/projects/landing-page/menu.webp', alt: 'Landing page menu', caption: 'Menu page' },
+                { src: 'assets/projects/landing-page/about.webp', alt: 'Landing page about section', caption: 'About page' },
+                { src: 'assets/projects/landing-page/contact.webp', alt: 'Landing page contact section', caption: 'Contact page' },
+                { src: 'assets/projects/landing-page/mobile.webp', alt: 'Landing page mobile layout', caption: 'Mobile layout' }
+                ]
+            },
+            'email-campaign': {
+                title: 'Email Marketing Campaign',
+                items: [
+                { src: 'assets/projects/hubspot/hubspot-marketing-email.webp', alt: 'Marketing email', caption: 'Marketing email' },
+                { src: 'assets/projects/hubspot/hubspot-email-report.webp', alt: 'Email campaign report', caption: 'Campaign report' },
+                { src: 'assets/projects/hubspot/hubspot-dashboard.webp', alt: 'Campaign dashboard', caption: 'Campaign dashboard' }
+                ]
+            }
+        };
 
+        const modal = document.querySelector('#solution-modal');
+        const modalTitle = modal.querySelector('#solution-modal-title');
+        const stage = modal.querySelector('.solution-gallery-stage');
+        const caption = modal.querySelector('.solution-gallery-caption');
+        const count = modal.querySelector('.solution-gallery-count');
+        const thumbnails = modal.querySelector('.solution-gallery-thumbnails');
+        const previousButton = modal.querySelector('.solution-gallery-arrow--previous');
+        const nextButton = modal.querySelector('.solution-gallery-arrow--next');
+        let activeGallery;
+        let activeIndex = 0;
+        let triggerElement;
+
+        function renderGallery() {
+            const gallery = galleries[activeGallery];
+            const item = gallery.items[activeIndex];
+            modalTitle.textContent = gallery.title;
+            caption.textContent = item.caption;
+            count.textContent = `${activeIndex + 1} of ${gallery.items.length}`;
+            stage.replaceChildren();
+
+            const media = document.createElement(item.type === 'video' ? 'video' : 'img');
+            media.src = item.src;
+            media.className = 'solution-gallery-media';
+            if (item.type === 'video') {
+                media.controls = true;
+                media.autoplay = true;
+                media.playsInline = true;
+            } else {
+                media.alt = item.alt;
+            }
+            stage.append(media);
+
+            thumbnails.replaceChildren();
+            gallery.items.forEach((galleryItem, index) => {
+                const thumbnail = document.createElement('button');
+                thumbnail.type = 'button';
+                thumbnail.className = 'solution-gallery-thumbnail';
+                thumbnail.classList.toggle('is-active', index === activeIndex);
+                thumbnail.setAttribute('aria-label', `Show ${galleryItem.caption}`);
+                thumbnail.addEventListener('click', () => {
+                    activeIndex = index;
+                    renderGallery();
+                });
+
+                if (galleryItem.type === 'video') {
+                    thumbnail.innerHTML = '<i class="fa-solid fa-play"></i>';
+                } else {
+                    const image = document.createElement('img');
+                    image.src = galleryItem.src;
+                    image.alt = '';
+                    thumbnail.append(image);
+                }
+                thumbnails.append(thumbnail);
+            });
+
+            const hasMultipleItems = gallery.items.length > 1;
+            previousButton.hidden = !hasMultipleItems;
+            nextButton.hidden = !hasMultipleItems;
+        }
+
+        function openGallery(galleryId, trigger) {
+            activeGallery = galleryId;
+            activeIndex = 0;
+            triggerElement = trigger;
+            renderGallery();
+            modal.hidden = false;
+            document.body.classList.add('solution-modal-open');
+            modal.querySelector('.solution-modal-close').focus();
+        }
+
+        function closeGallery() {
+            if (modal.hidden) return;
+            modal.hidden = true;
+            document.body.classList.remove('solution-modal-open');
+            stage.replaceChildren();
+            triggerElement?.focus();
+        }
+
+        function moveGallery(direction) {
+            const items = galleries[activeGallery].items;
+            activeIndex = (activeIndex + direction + items.length) % items.length;
+            renderGallery();
+        }
+
+        document.querySelectorAll('[data-gallery]').forEach((trigger) => {
+            trigger.addEventListener('click', () => openGallery(trigger.dataset.gallery, trigger));
+        });
+
+        modal.querySelectorAll('[data-modal-close]').forEach((button) => {
+            button.addEventListener('click', closeGallery);
+        });
+        previousButton.addEventListener('click', () => moveGallery(-1));
+        nextButton.addEventListener('click', () => moveGallery(1));
+
+        document.addEventListener('keydown', (event) => {
+            if (modal.hidden) return;
+            if (event.key === 'Escape') closeGallery();
+            if (event.key === 'ArrowLeft') moveGallery(-1);
+            if (event.key === 'ArrowRight') moveGallery(1);
+        });
+    })();
+</script>
 </body>
-
 </html>
-
-
-
-
