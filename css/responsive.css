@@ -118,6 +118,12 @@
 
     }
 
+    .certifications-grid{
+
+        grid-template-columns:repeat(2, minmax(0, 1fr));
+
+    }
+
 }
 /* ==========================================
    MOBILE
@@ -179,7 +185,13 @@
 
     }
 
-    .expertise-grid{
+        .expertise-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .certifications-grid{
 
         grid-template-columns:1fr;
 
