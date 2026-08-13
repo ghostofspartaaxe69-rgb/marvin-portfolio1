@@ -780,29 +780,7 @@ header {
     border-color: var(--primary);
 
 }
-.expertise-card:hover {
 
-    transform: translateY(-6px);
-
-    border-color: var(--primary);
-
-}
-
-
-/* ==========================================
-   CERTIFICATIONS
-========================================== */
-
-/* PASTE THE CERTIFICATION CSS HERE */
-
-
- /* ==========================================
-    TOOLS LOGO GRID
- ========================================== */
-
-.tools-section .expertise-card {
-
-    display: flex;
 /* ==========================================
    TOOLS LOGO GRID
 ========================================== */
@@ -1732,5 +1710,3 @@ footer p {
         height: 36px;
     }
 }
-
-
