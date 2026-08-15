@@ -55,7 +55,7 @@
             <div class="hero-left">
 
                 <span class="hero-tag">
-                    CRM | OPERATIONS | ADMINISTRATION | MARKETING
+                    CRM / OPERATIONS / ADMINISTRATION / MARKETING
                 </span>
 
                 <h1>
@@ -236,7 +236,7 @@
                         </div>
                         <div class="solution-media">
                             <video autoplay muted loop playsinline aria-label="Social media video editing example">
-                                <source src="assets/projects/video-editing/social-media-reel.mp4" type="video/mp4">
+                                <source src="assets/projects/video-editing/1.mp4" type="video/mp4">
                             </video>
                             <button type="button" class="solution-media-trigger" data-gallery="social-video" aria-label="Open Social Media Content Reel preview">Open preview</button>
                         </div>
@@ -1233,9 +1233,10 @@
             'social-video': {
                 title: 'Social Media Content Reel',
                 items: [
-                { src: 'assets/projects/video-editing/social-media-reel.mp4', type: 'video', caption: 'Social media reel' },
-                { src: 'assets/projects/video-editing/promotional-video.mp4', type: 'video', caption: 'Promotional video' },
-                { src: 'assets/projects/video-editing/motion-graphics.mp4', type: 'video', caption: 'Motion graphics' }
+                { src: 'assets/projects/video-editing/1.mp4', type: 'video', caption: 'Social media reel 1' },
+                { src: 'assets/projects/video-editing/2.mp4', type: 'video', caption: 'Social media reel 2' },
+                { src: 'assets/projects/video-editing/3.mp4', type: 'video', caption: 'Social media reel 3' },
+                { src: 'assets/projects/video-editing/4.mp4', type: 'video', caption: 'Social media reel 4' }
                 ]
             },
             'landing-page': {
