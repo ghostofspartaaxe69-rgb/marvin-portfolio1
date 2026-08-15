@@ -1172,6 +1172,67 @@ header {
 
 }
 
+/* HubSpot form embed: preserves the contact card's dark-blue presentation. */
+.hubspot-form {
+    width: 100%;
+    min-height: 520px;
+}
+
+.hubspot-form .hs-form-frame,
+.hubspot-form iframe {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    border: 0;
+}
+
+/* Applied when HubSpot renders its fields in the page rather than an isolated frame. */
+.hubspot-form .hs-form,
+.hubspot-form form {
+    color: var(--text);
+    font-family: var(--font-family);
+}
+
+.hubspot-form label {
+    color: var(--text);
+    font-weight: var(--medium);
+}
+
+.hubspot-form input,
+.hubspot-form select,
+.hubspot-form textarea {
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    background: rgba(255, 255, 255, .03);
+    color: var(--white);
+    font: inherit;
+}
+
+.hubspot-form input:focus,
+.hubspot-form select:focus,
+.hubspot-form textarea:focus {
+    border-color: var(--primary);
+    outline: none;
+}
+
+.hubspot-form input[type="submit"],
+.hubspot-form button[type="submit"] {
+    border: 0;
+    border-radius: var(--radius-md);
+    background: var(--primary);
+    color: var(--white);
+    cursor: pointer;
+    font: inherit;
+    font-weight: var(--semibold);
+}
+
+.hubspot-form input[type="submit"]:hover,
+.hubspot-form button[type="submit"]:hover {
+    background: var(--primary-dark);
+}
+
 
 
 /* ==========================================
