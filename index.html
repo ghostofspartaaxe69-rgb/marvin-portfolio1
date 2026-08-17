@@ -20,43 +20,379 @@
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+
+    <!-- =========================================================
+         PORTFOLIO SECTION UPDATES
+         These styles control the new Career Journey,
+         My Philosophy, and Core Expertise layouts.
+         ========================================================= -->
+
+    <style>
+
+        /* =========================================================
+           CAREER JOURNEY
+           ========================================================= */
+
+        .career-journey {
+            padding: 120px 0;
+            background: var(--background);
+        }
+
+        .career-journey .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .career-journey h2 {
+            text-align: center;
+            color: var(--white);
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            line-height: 1.1;
+            margin-bottom: 55px;
+            font-weight: 800;
+        }
+
+        .career-journey .timeline {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 28px;
+        }
+
+        .career-journey .timeline-item {
+            min-width: 0;
+            padding: 34px;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            transition: var(--transition);
+        }
+
+        .career-journey .timeline-item:hover {
+            transform: translateY(-6px);
+            border-color: var(--primary);
+        }
+
+        .career-journey .timeline-item h3 {
+            color: var(--white);
+            font-size: clamp(1.15rem, 2vw, 1.45rem);
+            line-height: 1.3;
+            margin-bottom: 16px;
+        }
+
+        .career-journey .timeline-item p {
+            color: var(--text-light);
+            font-size: var(--body);
+            line-height: 1.8;
+            margin: 0;
+        }
+
+
+        /* =========================================================
+           MY PHILOSOPHY
+           ========================================================= */
+
+        .philosophy {
+            padding: 120px 0;
+            background: var(--background);
+        }
+
+        .philosophy .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .philosophy h2 {
+            color: var(--white);
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            line-height: 1.1;
+            margin-bottom: 40px;
+            font-weight: 800;
+        }
+
+        .philosophy blockquote {
+            margin: 0 0 35px;
+            padding: 32px 38px;
+            background: var(--card);
+            border-left: 4px solid var(--primary);
+            border-radius: var(--radius-lg);
+            color: var(--white);
+            font-size: clamp(1.35rem, 2.5vw, 2rem);
+            line-height: 1.55;
+            font-weight: 600;
+        }
+
+        .philosophy p {
+            max-width: 1100px;
+            margin: 0;
+            color: var(--text-light);
+            font-size: clamp(1rem, 1.4vw, 1.2rem);
+            line-height: 1.9;
+        }
+
+
+        /* =========================================================
+           CORE EXPERTISE
+           ========================================================= */
+
+        .expertise {
+            margin-top: 0;
+            padding: 120px 0;
+            background: var(--background);
+        }
+
+        .expertise .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .expertise h2 {
+            text-align: center;
+            color: var(--white);
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            line-height: 1.1;
+            margin-bottom: 55px;
+            font-weight: 800;
+        }
+
+        .expertise .expertise-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 25px;
+        }
+
+        .expertise .expertise-card {
+            min-width: 0;
+            min-height: 160px;
+            padding: 30px 24px;
+            text-align: center;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            transition: var(--transition);
+        }
+
+        .expertise .expertise-card:hover {
+            transform: translateY(-6px);
+            border-color: var(--primary);
+        }
+
+        .expertise .expertise-card i {
+            display: block;
+            margin-bottom: 15px;
+            color: var(--primary);
+            font-size: 22px;
+        }
+
+        .expertise .expertise-card h3 {
+            color: var(--white);
+            font-size: 1.1rem;
+            line-height: 1.3;
+            margin-bottom: 12px;
+        }
+
+        .expertise .expertise-card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin: 0;
+        }
+
+
+        /* =========================================================
+           HOW I CAN HELP — NOW INSIDE CORE EXPERTISE
+           ========================================================= */
+
+        .expertise-help {
+            margin-top: 90px;
+        }
+
+        .expertise-help h3 {
+            text-align: center;
+            color: var(--white);
+            font-size: clamp(2rem, 4vw, 3rem);
+            line-height: 1.15;
+            margin-bottom: 40px;
+            font-weight: 800;
+        }
+
+        .expertise-help .expertise-grid {
+            margin-top: 0;
+        }
+
+        .expertise-help .expertise-card {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 105px;
+            padding: 28px 24px;
+            color: var(--white);
+            font-size: 1rem;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+
+
+        /* =========================================================
+           MOBILE RESPONSIVENESS FOR UPDATED SECTIONS
+           ========================================================= */
+
+        @media (max-width: 992px) {
+
+            .career-journey .timeline {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .expertise .expertise-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+        }
+
+        @media (max-width: 768px) {
+
+            .career-journey,
+            .philosophy,
+            .expertise {
+                padding: 90px 0;
+            }
+
+            .career-journey .timeline,
+            .expertise .expertise-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .career-journey .timeline-item {
+                padding: 28px;
+            }
+
+            .philosophy blockquote {
+                padding: 26px;
+            }
+
+            .expertise-help {
+                margin-top: 65px;
+            }
+
+        }
+
+        @media (max-width: 480px) {
+
+            .career-journey,
+            .philosophy,
+            .expertise {
+                padding: 75px 0;
+            }
+
+            .career-journey .container,
+            .philosophy .container,
+            .expertise .container {
+                width: 92%;
+            }
+
+            .career-journey .timeline-item {
+                padding: 24px;
+            }
+
+            .philosophy blockquote {
+                padding: 22px;
+                font-size: 1.2rem;
+            }
+
+        }
+
+    </style>
+
 </head>
 
 <body>
+
     <header>
         <nav class="navbar">
+
             <div class="logo">
-                <a href="#hero"><img src="assets/images/branding/logo.png" alt="Marvin Tinonas Logo"></a>
+                <a href="#hero">
+                    <img src="assets/images/branding/logo.png"
+                        alt="Marvin Tinonas Logo">
+                </a>
             </div>
+
             <ul class="nav-links">
-                <li><a href="#hero" class="active">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#tools">Tools</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+
+                <li>
+                    <a href="#hero" class="active">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#services">
+                        Services
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#tools">
+                        Tools
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#about">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#certificates">
+                        My Certificates
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contact">
+                        Contact
+                    </a>
+                </li>
+
             </ul>
-            <a href="#contact" class="btn-primary">Let's Work Together</a>
+
+            <a href="#contact" class="btn-primary">
+                Let's Work Together
+            </a>
+
         </nav>
     </header>
-<section id="hero">
+
+
+    <!-- =========================================================
+         HERO
+         ========================================================= -->
+
+    <section id="hero">
 
         <div class="hero-background" aria-hidden="true">
+
             <img
                 src="assets/images/hero/hero-crm.webp"
                 alt="">
+
         </div>
+
 
         <div class="hero-overlay" aria-hidden="true"></div>
 
-        <div class="hero-container">
 
-            <!-- Left -->
+        <div class="hero-container">
 
             <div class="hero-left">
 
                 <span class="hero-tag">
                     CRM | OPERATIONS | ADMINISTRATION | MARKETING
                 </span>
+
 
                 <h1>
 
@@ -76,6 +412,7 @@
 
                 </h1>
 
+
                 <p>
 
                     I help businesses streamline operations,
@@ -85,7 +422,6 @@
 
                 </p>
 
-                <!-- Badges -->
 
                 <div class="hero-badges">
 
@@ -93,47 +429,59 @@
 
                         <i class="fa-solid fa-users"></i>
 
-                        <span>CRM Management</span>
+                        <span>
+                            CRM Management
+                        </span>
 
                     </div>
+
 
                     <div class="badge">
 
                         <i class="fa-solid fa-gear"></i>
 
-                        <span>Operations</span>
+                        <span>
+                            Operations
+                        </span>
 
                     </div>
+
 
                     <div class="badge">
 
                         <i class="fa-solid fa-bullseye"></i>
 
-                        <span>Lead Generation</span>
+                        <span>
+                            Lead Generation
+                        </span>
 
                     </div>
+
 
                     <div class="badge">
 
                         <i class="fa-solid fa-bullhorn"></i>
 
-                        <span>Marketing Support</span>
+                        <span>
+                            Marketing Support
+                        </span>
 
                     </div>
 
                 </div>
 
-                <!-- Buttons -->
 
                 <div class="hero-buttons">
 
-                  <a href="#services" class="btn-primary">
+                    <a href="#services" class="btn-primary">
+                        View My Work
+                    </a>
 
-    View My Work
 
-</a>
-
-                    <a href="assets/document/Marvintinonas.pdf" class="btn-secondary" download>
+                    <a
+                        href="assets/document/Marvintinonas.pdf"
+                        class="btn-secondary"
+                        download>
 
                         Download CV
 
@@ -143,260 +491,656 @@
 
             </div>
 
+        </div>
+
+    </section>
 
 
+    <!-- =========================================================
+         SERVICES / SOLUTIONS
+         ========================================================= -->
 
+    <section id="services" class="solutions-hero">
+
+        <div class="solutions-shell">
+
+            <div class="solutions-intro">
+
+                <p class="solutions-eyebrow">
+                    What I Can Build
+                </p>
+
+
+                <h1>
+                    Practical Solutions I Can
+                    <br>
+                    Build for <span>Your Business</span>
+                </h1>
+
+
+                <p>
+                    Templates, systems, and creative assets designed
+                    to streamline operations, improve workflows,
+                    and support your business growth.
+                </p>
+
+            </div>
+
+
+            <aside class="solutions-note">
+
+                <span class="solutions-note-icon">
+                    <i class="fa-regular fa-lightbulb"></i>
+                </span>
+
+                <p>
+                    These are sample solutions and templates
+                    I can create and customize for your business needs.
+                </p>
+
+            </aside>
 
         </div>
 
     </section>
 
-        <section id="services" class="solutions-hero">
-            <div class="solutions-shell">
-                <div class="solutions-intro">
-                    <p class="solutions-eyebrow">What I Can Build</p>
-                    <h1>Practical Solutions I Can<br>Build for <span>Your Business</span></h1>
-                    <p>Templates, systems, and creative assets designed to streamline operations, improve workflows, and support your business growth.</p>
-                </div>
 
-                <aside class="solutions-note">
-                    <span class="solutions-note-icon"><i class="fa-regular fa-lightbulb"></i></span>
-                    <p>These are sample solutions and templates I can create and customize for your business needs.</p>
-                </aside>
+    <section
+        class="solutions-grid-section"
+        aria-label="Sample solutions">
+
+        <div class="solutions-shell">
+
+            <div class="solutions-grid">
+
+
+                <article class="solution-card">
+
+                    <div class="solution-card-heading">
+
+                        <span class="solution-icon solution-icon--orange">
+                            <i class="fa-brands fa-hubspot"></i>
+                        </span>
+
+                        <div>
+
+                            <h2>
+                                CRM Workflow Template
+                            </h2>
+
+                            <p>
+                                HubSpot Workflow Automation
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="solution-media">
+
+                        <img
+                            src="assets/projects/hubspot/hubspot-workflow.webp"
+                            alt="HubSpot workflow automation example">
+
+                        <button
+                            type="button"
+                            class="solution-media-trigger"
+                            data-gallery="crm"
+                            aria-label="Open CRM Workflow Template preview">
+
+                            Open preview
+
+                        </button>
+
+                    </div>
+
+
+                    <p class="solution-description">
+                        Automated workflow to nurture leads,
+                        send emails, and manage contacts efficiently.
+                    </p>
+
+
+                    <div class="solution-card-footer">
+
+                        <div class="solution-tags">
+
+                            <span>HubSpot</span>
+                            <span>Workflow</span>
+                            <span>Automation</span>
+                            <span>CRM</span>
+
+                        </div>
+
+
+                        <button
+                            type="button"
+                            class="solution-link"
+                            data-gallery="crm">
+
+                            View Preview
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <article class="solution-card">
+
+                    <div class="solution-card-heading">
+
+                        <span class="solution-icon solution-icon--green">
+                            <i class="fa-solid fa-table"></i>
+                        </span>
+
+                        <div>
+
+                            <h2>
+                                Lead Management Tracker
+                            </h2>
+
+                            <p>
+                                Google Sheets Tracker
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="solution-media">
+
+                        <img
+                            src="assets/projects/lead-tracker/lead-tracker-sheet.webp"
+                            alt="Lead management spreadsheet example">
+
+                        <button
+                            type="button"
+                            class="solution-media-trigger"
+                            data-gallery="lead-tracker"
+                            aria-label="Open Lead Management Tracker preview">
+
+                            Open preview
+
+                        </button>
+
+                    </div>
+
+
+                    <p class="solution-description">
+                        Organized lead tracking system to manage prospects,
+                        follow-ups, and pipeline status.
+                    </p>
+
+
+                    <div class="solution-card-footer">
+
+                        <div class="solution-tags">
+
+                            <span>Google Sheets</span>
+                            <span>Tracking</span>
+                            <span>CRM</span>
+                            <span>Reporting</span>
+
+                        </div>
+
+
+                        <button
+                            type="button"
+                            class="solution-link"
+                            data-gallery="lead-tracker">
+
+                            View Preview
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <article class="solution-card">
+
+                    <div class="solution-card-heading">
+
+                        <span class="solution-icon solution-icon--blue">
+                            <i class="fa-solid fa-file-lines"></i>
+                        </span>
+
+                        <div>
+
+                            <h2>
+                                Customer Onboarding SOP
+                            </h2>
+
+                            <p>
+                                SOP Documentation
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="solution-media">
+
+                        <img
+                            src="assets/projects/customer-onboarding-sop/cover.webp"
+                            alt="Customer onboarding standard operating procedure example">
+
+                        <button
+                            type="button"
+                            class="solution-media-trigger"
+                            data-gallery="onboarding-sop"
+                            aria-label="Open Customer Onboarding SOP preview">
+
+                            Open preview
+
+                        </button>
+
+                    </div>
+
+
+                    <p class="solution-description">
+                        Step-by-step process documentation to ensure
+                        consistency, clarity, and efficient onboarding.
+                    </p>
+
+
+                    <div class="solution-card-footer">
+
+                        <div class="solution-tags">
+
+                            <span>SOP</span>
+                            <span>Documentation</span>
+                            <span>Process</span>
+                            <span>Operations</span>
+
+                        </div>
+
+
+                        <button
+                            type="button"
+                            class="solution-link"
+                            data-gallery="onboarding-sop">
+
+                            View Preview
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <article class="solution-card">
+
+                    <div class="solution-card-heading">
+
+                        <span class="solution-icon solution-icon--pink">
+                            <i class="fa-solid fa-calendar-days"></i>
+                        </span>
+
+                        <div>
+
+                            <h2>
+                                Social Media Content Reel
+                            </h2>
+
+                            <p>
+                                Short-Form Video Content
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="solution-media">
+
+                        <video
+                            autoplay
+                            muted
+                            loop
+                            playsinline
+                            aria-label="Social media video editing example">
+
+                            <source
+                                src="assets/projects/video-editing/1.mp4"
+                                type="video/mp4">
+
+                        </video>
+
+
+                        <button
+                            type="button"
+                            class="solution-media-trigger"
+                            data-gallery="social-video"
+                            aria-label="Open Social Media Content Reel preview">
+
+                            Open preview
+
+                        </button>
+
+                    </div>
+
+
+                    <p class="solution-description">
+                        Engaging short-form social content designed
+                        to support regular brand communication.
+                    </p>
+
+
+                    <div class="solution-card-footer">
+
+                        <div class="solution-tags">
+
+                            <span>Content</span>
+                            <span>Social Media</span>
+                            <span>Video</span>
+                            <span>Editing</span>
+
+                        </div>
+
+
+                        <button
+                            type="button"
+                            class="solution-link"
+                            data-gallery="social-video">
+
+                            View Preview
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <article class="solution-card">
+
+                    <div class="solution-card-heading">
+
+                        <span class="solution-icon solution-icon--purple">
+                            <i class="fa-solid fa-display"></i>
+                        </span>
+
+                        <div>
+
+                            <h2>
+                                Landing Page Concept
+                            </h2>
+
+                            <p>
+                                Website Design Concept
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="solution-media">
+
+                        <img
+                            src="assets/projects/landing-page/homepage.webp"
+                            alt="Landing page design concept">
+
+                        <button
+                            type="button"
+                            class="solution-media-trigger"
+                            data-gallery="landing-page"
+                            aria-label="Open Landing Page Concept preview">
+
+                            Open preview
+
+                        </button>
+
+                    </div>
+
+
+                    <p class="solution-description">
+                        Clean and modern landing page concept designed
+                        to drive conversions and showcase your brand.
+                    </p>
+
+
+                    <div class="solution-card-footer">
+
+                        <div class="solution-tags">
+
+                            <span>Figma</span>
+                            <span>UI/UX</span>
+                            <span>Landing Page</span>
+                            <span>Web Design</span>
+
+                        </div>
+
+
+                        <button
+                            type="button"
+                            class="solution-link"
+                            data-gallery="landing-page">
+
+                            View Preview
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <article class="solution-card">
+
+                    <div class="solution-card-heading">
+
+                        <span class="solution-icon solution-icon--red">
+                            <i class="fa-solid fa-envelope-open-text"></i>
+                        </span>
+
+                        <div>
+
+                            <h2>
+                                Email Marketing Campaign
+                            </h2>
+
+                            <p>
+                                Campaign Design &amp; Automation
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="solution-media">
+
+                        <img
+                            src="assets/projects/hubspot/hubspot-marketing-email.webp"
+                            alt="Email marketing campaign example">
+
+                        <button
+                            type="button"
+                            class="solution-media-trigger"
+                            data-gallery="email-campaign"
+                            aria-label="Open Email Marketing Campaign preview">
+
+                            Open preview
+
+                        </button>
+
+                    </div>
+
+
+                    <p class="solution-description">
+                        Branded email campaigns and automated sequences
+                        that help turn interest into action.
+                    </p>
+
+
+                    <div class="solution-card-footer">
+
+                        <div class="solution-tags">
+
+                            <span>Email</span>
+                            <span>Campaign</span>
+                            <span>Branding</span>
+                            <span>Automation</span>
+
+                        </div>
+
+
+                        <button
+                            type="button"
+                            class="solution-link"
+                            data-gallery="email-campaign">
+
+                            View Preview
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </button>
+
+                    </div>
+
+                </article>
+
             </div>
-        </section>
 
-        <section class="solutions-grid-section" aria-label="Sample solutions">
-            <div class="solutions-shell">
-                <div class="solutions-grid">
-                    <article class="solution-card">
-                        <div class="solution-card-heading">
-                            <span class="solution-icon solution-icon--orange"><i class="fa-brands fa-hubspot"></i></span>
-                            <div>
-                                <h2>CRM Workflow Template</h2>
-                                <p>HubSpot Workflow Automation</p>
-                            </div>
-                        </div>
-                        <div class="solution-media">
-                            <img src="assets/projects/hubspot/hubspot-workflow.webp" alt="HubSpot workflow automation example">
-                            <button type="button" class="solution-media-trigger" data-gallery="crm" aria-label="Open CRM Workflow Template preview">Open preview</button>
-                        </div>
-                        <p class="solution-description">Automated workflow to nurture leads, send emails, and manage contacts efficiently.</p>
-                        <div class="solution-card-footer">
-                            <div class="solution-tags"><span>HubSpot</span><span>Workflow</span><span>Automation</span><span>CRM</span></div>
-                            <button type="button" class="solution-link" data-gallery="crm">View Preview <i class="fa-solid fa-arrow-right"></i></button>
-                        </div>
-                    </article>
+        </div>
 
-                    <article class="solution-card">
-                        <div class="solution-card-heading">
-                            <span class="solution-icon solution-icon--green"><i class="fa-solid fa-table"></i></span>
-                            <div>
-                                <h2>Lead Management Tracker</h2>
-                                <p>Google Sheets Tracker</p>
-                            </div>
-                        </div>
-                        <div class="solution-media">
-                            <img src="assets/projects/lead-tracker/lead-tracker-sheet.webp" alt="Lead management spreadsheet example">
-                            <button type="button" class="solution-media-trigger" data-gallery="lead-tracker" aria-label="Open Lead Management Tracker preview">Open preview</button>
-                        </div>
-                        <p class="solution-description">Organized lead tracking system to manage prospects, follow-ups, and pipeline status.</p>
-                        <div class="solution-card-footer">
-                            <div class="solution-tags"><span>Google Sheets</span><span>Tracking</span><span>CRM</span><span>Reporting</span></div>
-                            <button type="button" class="solution-link" data-gallery="lead-tracker">View Preview <i class="fa-solid fa-arrow-right"></i></button>
-                        </div>
-                    </article>
-
-                    <article class="solution-card">
-                        <div class="solution-card-heading">
-                            <span class="solution-icon solution-icon--blue"><i class="fa-solid fa-file-lines"></i></span>
-                            <div>
-                                <h2>Customer Onboarding SOP</h2>
-                                <p>SOP Documentation</p>
-                            </div>
-                        </div>
-                        <div class="solution-media">
-                            <img src="assets/projects/customer-onboarding-sop/cover.webp" alt="Customer onboarding standard operating procedure example">
-                            <button type="button" class="solution-media-trigger" data-gallery="onboarding-sop" aria-label="Open Customer Onboarding SOP preview">Open preview</button>
-                        </div>
-                        <p class="solution-description">Step-by-step process documentation to ensure consistency, clarity, and efficient onboarding.</p>
-                        <div class="solution-card-footer">
-                            <div class="solution-tags"><span>SOP</span><span>Documentation</span><span>Process</span><span>Operations</span></div>
-                            <button type="button" class="solution-link" data-gallery="onboarding-sop">View Preview <i class="fa-solid fa-arrow-right"></i></button>
-                        </div>
-                    </article>
-
-                    <article class="solution-card">
-                        <div class="solution-card-heading">
-                            <span class="solution-icon solution-icon--pink"><i class="fa-solid fa-calendar-days"></i></span>
-                            <div>
-                                <h2>Social Media Content Reel</h2>
-                                <p>Short-Form Video Content</p>
-                            </div>
-                        </div>
-                        <div class="solution-media">
-                            <video autoplay muted loop playsinline aria-label="Social media video editing example">
-                                <source src="assets/projects/video-editing/1.mp4" type="video/mp4">
-                            </video>
-                            <button type="button" class="solution-media-trigger" data-gallery="social-video" aria-label="Open Social Media Content Reel preview">Open preview</button>
-                        </div>
-                        <p class="solution-description">Engaging short-form social content designed to support regular brand communication.</p>
-                        <div class="solution-card-footer">
-                            <div class="solution-tags"><span>Content</span><span>Social Media</span><span>Video</span><span>Editing</span></div>
-                            <button type="button" class="solution-link" data-gallery="social-video">View Preview <i class="fa-solid fa-arrow-right"></i></button>
-                        </div>
-                    </article>
-
-                    <article class="solution-card">
-                        <div class="solution-card-heading">
-                            <span class="solution-icon solution-icon--purple"><i class="fa-solid fa-display"></i></span>
-                            <div>
-                                <h2>Landing Page Concept</h2>
-                                <p>Website Design Concept</p>
-                            </div>
-                        </div>
-                        <div class="solution-media">
-                            <img src="assets/projects/landing-page/homepage.webp" alt="Landing page design concept">
-                            <button type="button" class="solution-media-trigger" data-gallery="landing-page" aria-label="Open Landing Page Concept preview">Open preview</button>
-                        </div>
-                        <p class="solution-description">Clean and modern landing page concept designed to drive conversions and showcase your brand.</p>
-                        <div class="solution-card-footer">
-                            <div class="solution-tags"><span>Figma</span><span>UI/UX</span><span>Landing Page</span><span>Web Design</span></div>
-                            <button type="button" class="solution-link" data-gallery="landing-page">View Preview <i class="fa-solid fa-arrow-right"></i></button>
-                        </div>
-                    </article>
-
-                    <article class="solution-card">
-                        <div class="solution-card-heading">
-                            <span class="solution-icon solution-icon--red"><i class="fa-solid fa-envelope-open-text"></i></span>
-                            <div>
-                                <h2>Email Marketing Campaign</h2>
-                                <p>Campaign Design &amp; Automation</p>
-                            </div>
-                        </div>
-                        <div class="solution-media">
-                            <img src="assets/projects/hubspot/hubspot-marketing-email.webp" alt="Email marketing campaign example">
-                            <button type="button" class="solution-media-trigger" data-gallery="email-campaign" aria-label="Open Email Marketing Campaign preview">Open preview</button>
-                        </div>
-                        <p class="solution-description">Branded email campaigns and automated sequences that help turn interest into action.</p>
-                        <div class="solution-card-footer">
-                            <div class="solution-tags"><span>Email</span><span>Campaign</span><span>Branding</span><span>Automation</span></div>
-                            <button type="button" class="solution-link" data-gallery="email-campaign">View Preview <i class="fa-solid fa-arrow-right"></i></button>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section class="solutions-cta">
-            <div class="solutions-cta-content">
-                <span class="solutions-cta-icon"><i class="fa-regular fa-star"></i></span>
-                <p>These are just examples of what I can build. Let's create the right solution for your business.</p>
-                <a href="#contact" class="btn-primary">Let's Work Together</a>
-            </div>
-        </section>
-    
+    </section>
 
 
+    <section class="solutions-cta">
+
+        <div class="solutions-cta-content">
+
+            <span class="solutions-cta-icon">
+                <i class="fa-regular fa-star"></i>
+            </span>
+
+            <p>
+                These are just examples of what I can build.
+                Let's create the right solution for your business.
+            </p>
+
+            <a href="#contact" class="btn-primary">
+                Let's Work Together
+            </a>
+
+        </div>
+
+    </section>
 
 
-
-
-    <!-- ========================= -->
-    <!-- TOOLS -->
-    <!-- ========================= -->
+    <!-- =========================================================
+         PART 1 ENDS HERE
+         ========================================================= -->
+    <!-- =========================================================
+         TOOLS
+         ========================================================= -->
 
     <section id="tools" class="tools-section">
 
         <div class="container">
 
             <h2>
-
                 Tools I Work With
-
             </h2>
 
             <div class="expertise-grid">
 
                 <div class="expertise-card">
-    <img src="assets/images/tools logo/Hubspot.png" alt="HubSpot">
-    <span>HubSpot</span>
-</div>
+                    <img src="assets/images/tools logo/Hubspot.png" alt="HubSpot">
+                    <span>HubSpot</span>
+                </div>
 
-<div class="expertise-card">
-    <img src="assets/images/tools logo/Monday.com.png" alt="Monday.com">
-    <span>Monday.com</span>
-</div>
+                <div class="expertise-card">
+                    <img src="assets/images/tools logo/Monday.com.png" alt="Monday.com">
+                    <span>Monday.com</span>
+                </div>
 
-<div class="expertise-card">
-    <img src="assets/images/tools logo/Asana.png" alt="Asana">
-    <span>Asana</span>
-</div>
+                <div class="expertise-card">
+                    <img src="assets/images/tools logo/Asana.png" alt="Asana">
+                    <span>Asana</span>
+                </div>
 
-<div class="expertise-card">
-    <img src="assets/images/tools logo/Trello.png" alt="Trello">
-    <span>Trello</span>
-</div>
+                <div class="expertise-card">
+                    <img src="assets/images/tools logo/Trello.png" alt="Trello">
+                    <span>Trello</span>
+                </div>
 
-<div class="expertise-card">
-    <img src="assets/images/tools logo/Slack.png" alt="Slack">
-    <span>Slack</span>
-</div>
+                <div class="expertise-card">
+                    <img src="assets/images/tools logo/Slack.png" alt="Slack">
+                    <span>Slack</span>
+                </div>
 
-<div class="expertise-card">
-    <img src="assets/images/tools logo/Microsoftoffice.png" alt="Microsoft Office">
-    <span>Microsoft Office</span>
-</div>
+                <div class="expertise-card">
+                    <img src="assets/images/tools logo/Microsoftoffice.png" alt="Microsoft Office">
+                    <span>Microsoft Office</span>
+                </div>
 
-<div class="expertise-card">
-    <img src="assets/images/tools logo/Excel.png" alt="Excel">
-    <span>Excel</span>
-</div>
+                <div class="expertise-card">
+                    <img src="assets/images/tools logo/Excel.png" alt="Excel">
+                    <span>Excel</span>
+                </div>
 
-<div class="expertise-card">
-    <img src="assets/images/tools logo/Googleworkspace.png" alt="Google Workspace">
-    <span>Google Workspace</span>
-</div>
+                <div class="expertise-card">
+                    <img src="assets/images/tools logo/Googleworkspace.png"
+                        alt="Google Workspace">
+                    <span>Google Workspace</span>
+                </div>
 
-<div class="expertise-card">
-    <img src="assets/images/tools logo/Canva.png" alt="Canva">
-    <span>Canva</span>
-</div>
+                <div class="expertise-card">
+                    <img src="assets/images/tools logo/Canva.png" alt="Canva">
+                    <span>Canva</span>
+                </div>
 
-<div class="expertise-card">
-    <img src="assets/images/tools logo/Wordpress.png" alt="WordPress">
-    <span>WordPress</span>
-</div>
+                <div class="expertise-card">
+                    <img src="assets/images/tools logo/Wordpress.png" alt="WordPress">
+                    <span>WordPress</span>
+                </div>
 
-<div class="expertise-card">
-    <img src="assets/images/tools logo/Metabusiness.png" alt="Meta Business Suite">
-    <span>Meta Business Suite</span>
-</div>
+                <div class="expertise-card">
+                    <img src="assets/images/tools logo/Metabusiness.png"
+                        alt="Meta Business Suite">
+                    <span>Meta Business Suite</span>
+                </div>
 
-<div class="expertise-card">
-    <img src="assets/images/tools logo/Chatgpt.png" alt="ChatGPT">
-    <span>ChatGPT</span>
-</div>
+                <div class="expertise-card">
+                    <img src="assets/images/tools logo/Chatgpt.png" alt="ChatGPT">
+                    <span>ChatGPT</span>
+                </div>
 
-<div class="expertise-card">
-    <img src="assets/images/tools logo/Zoom.png" alt="Zoom">
-    <span>Zoom</span>
-</div>
+                <div class="expertise-card">
+                    <img src="assets/images/tools logo/Zoom.png" alt="Zoom">
+                    <span>Zoom</span>
+                </div>
 
-<div class="expertise-card">
-    <img src="assets/images/tools logo/LinkedinNavigator.png" alt="LinkedIn Sales Navigator">
-    <span>LinkedIn Sales Navigator</span>
-</div>
+                <div class="expertise-card">
+                    <img src="assets/images/tools logo/LinkedinNavigator.png"
+                        alt="LinkedIn Sales Navigator">
+                    <span>LinkedIn Sales Navigator</span>
+                </div>
 
-<div class="expertise-card">
-    <img src="assets/images/tools logo/Shopify.png" alt="Shopify">
-    <span>Shopify</span>
-</div>
+                <div class="expertise-card">
+                    <img src="assets/images/tools logo/Shopify.png" alt="Shopify">
+                    <span>Shopify</span>
+                </div>
 
-<div class="expertise-card">
-    <img src="assets/images/tools logo/Capcut.png" alt="CapCut">
-    <span>CapCut</span>
-</div>
+                <div class="expertise-card">
+                    <img src="assets/images/tools logo/Capcut.png" alt="CapCut">
+                    <span>CapCut</span>
+                </div>
 
             </div>
 
@@ -404,18 +1148,20 @@
 
     </section>
 
+
+    <!-- =========================================================
+         ABOUT PAGE HERO
+         ========================================================= -->
+
     <section class="page-hero">
 
         <div class="container">
 
             <span class="hero-tag">
-
                 ABOUT ME
-
             </span>
 
             <h1>
-
                 Turning Business Challenges Into
 
                 <span>Organized</span>,
@@ -425,17 +1171,14 @@
                 and
 
                 <span>Efficient Systems</span>
-
             </h1>
 
             <p>
-
                 From CRM management and project supervision
                 to workflow optimization and marketing support,
                 I help businesses improve productivity,
                 organization,
                 and long-term growth through reliable systems.
-
             </p>
 
         </div>
@@ -443,12 +1186,9 @@
     </section>
 
 
-
-
-
-    <!-- ========================= -->
-    <!-- ABOUT -->
-    <!-- ========================= -->
+    <!-- =========================================================
+         ABOUT
+         ========================================================= -->
 
     <section id="about" class="about-page">
 
@@ -458,21 +1198,20 @@
 
                 <div class="about-image">
 
-                    <img src="assets/images/branding/professional.png"
+                    <img
+                        src="assets/images/branding/professional.png"
                         alt="Marvin Tinonas">
 
                 </div>
 
+
                 <div class="about-text">
 
                     <h2>
-
                         Who I Am
-
                     </h2>
 
                     <p>
-
                         I'm Marvin Tinonas,
                         a Project Supervisor and Business Support Professional
                         specializing in CRM management,
@@ -481,11 +1220,9 @@
                         marketing support,
                         workflow optimization,
                         and team leadership.
-
                     </p>
 
                     <p>
-
                         Throughout my career,
                         I've progressed from Promotions Operations
                         and Data Quality Analyst roles
@@ -501,21 +1238,22 @@
                         coordinate projects,
                         supervise teams,
                         and streamline internal workflows.
-
                     </p>
 
                     <p>
-
                         I enjoy solving operational problems,
                         improving business systems,
                         and creating processes that allow teams
                         to work smarter,
                         faster,
                         and with greater consistency.
-
                     </p>
 
-                    <a href="assets/document/Marvintinonas.pdf"
+
+                    <!-- SECOND CV BUTTON -->
+
+                    <a
+                        href="assets/document/Marvintinonas.pdf"
                         download
                         class="btn-primary">
 
@@ -532,73 +1270,220 @@
     </section>
 
 
+    <!-- =========================================================
+         MY CERTIFICATES
+         ========================================================= -->
+
+    <section
+        id="certificates"
+        class="certifications-section">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <p class="section-eyebrow">
+                    PROFESSIONAL DEVELOPMENT
+                </p>
+
+                <h2>
+                    My Certificates
+                </h2>
+
+            </div>
 
 
+            <div class="certifications-grid">
 
-    <!-- ========================= -->
-    <!-- CAREER JOURNEY -->
-    <!-- ========================= -->
+
+                <!-- =================================================
+                     CERTIFICATE 1
+                     ================================================= -->
+
+                <a
+                    href="https://app-na2.hubspot.com/academy/achievements/dj1r5vsg/en/1/marvin-tinonas/hubspot-marketing-hub-software-certified"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="certificate-card">
+
+                    <div class="certificate-content">
+
+                        <h3>
+                            HubSpot Marketing Hub Software
+                        </h3>
+
+                        <span class="certificate-provider">
+                            HubSpot
+                        </span>
+
+                    </div>
+
+                    <span class="certificate-link">
+                        View Certificate
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </span>
+
+                </a>
+
+
+                <!-- =================================================
+                     CERTIFICATE 2
+                     ================================================= -->
+
+                <a
+                    href="https://app-na2.hubspot.com/academy/achievements/zw7x3660/en/1/marvin-tinonas/hubspot-data-integrations-certified"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="certificate-card">
+
+                    <div class="certificate-content">
+
+                        <h3>
+                            HubSpot Data Integrations Certification
+                        </h3>
+
+                        <span class="certificate-provider">
+                            HubSpot
+                        </span>
+
+                    </div>
+
+                    <span class="certificate-link">
+                        View Certificate
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </span>
+
+                </a>
+
+
+                <!-- =================================================
+                     CERTIFICATE 3
+                     ================================================= -->
+
+                <a
+                    href="https://app-na2.hubspot.com/academy/achievements/8ncwtt9d/en/1/marvin-tinonas/digital-marketing-certified"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="certificate-card">
+
+                    <div class="certificate-content">
+
+                        <h3>
+                            HubSpot Digital Marketing
+                        </h3>
+
+                        <span class="certificate-provider">
+                            HubSpot
+                        </span>
+
+                    </div>
+
+                    <span class="certificate-link">
+                        View Certificate
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </span>
+
+                </a>
+
+
+                <!-- =================================================
+                     CERTIFICATE 4
+                     ================================================= -->
+
+                <a
+                    href="https://app-na2.hubspot.com/academy/achievements/5kjvwxlf/en/1/marvin-tinonas/content-marketing-certified"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="certificate-card">
+
+                    <div class="certificate-content">
+
+                        <h3>
+                            HubSpot Content Marketing
+                        </h3>
+
+                        <span class="certificate-provider">
+                            HubSpot
+                        </span>
+
+                    </div>
+
+                    <span class="certificate-link">
+                        View Certificate
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </span>
+
+                </a>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         CAREER JOURNEY
+         ========================================================= -->
 
     <section class="career-journey">
 
         <div class="container">
 
             <h2>
-
                 Career Journey
-
             </h2>
 
+
             <div class="timeline">
+
+
+                <!-- CAREER 1 -->
 
                 <div class="timeline-item">
 
                     <h3>
-
                         Promotions Operations
-
                     </h3>
 
                     <p>
-
                         Began my career supporting promotional operations,
                         ensuring campaign execution,
                         maintaining records,
                         and assisting business processes.
-
                     </p>
 
                 </div>
 
+
+                <!-- CAREER 2 -->
+
                 <div class="timeline-item">
 
                     <h3>
-
                         Data Quality Analyst
-
                     </h3>
 
                     <p>
-
                         Focused on maintaining data integrity,
                         validating records,
                         improving reporting quality,
                         and supporting business accuracy.
-
                     </p>
 
                 </div>
 
+
+                <!-- CAREER 3 -->
+
                 <div class="timeline-item">
 
                     <h3>
-
-                        Virtual Assistant & Marketing Support
-
+                        Virtual Assistant &amp; Marketing Support
                     </h3>
 
                     <p>
-
                         Assisted businesses with CRM management,
                         lead generation,
                         administration,
@@ -606,21 +1491,20 @@
                         WordPress,
                         social media,
                         and graphic design.
-
                     </p>
 
                 </div>
 
+
+                <!-- CAREER 4 -->
+
                 <div class="timeline-item">
 
                     <h3>
-
-                        Team Leader & Project Supervisor
-
+                        Team Leader &amp; Project Supervisor
                     </h3>
 
                     <p>
-
                         Led virtual assistants,
                         supervised projects,
                         improved workflows,
@@ -628,10 +1512,10 @@
                         managed CRM systems,
                         documented SOPs,
                         and ensured successful project delivery.
-
                     </p>
 
                 </div>
+
 
             </div>
 
@@ -640,180 +1524,21 @@
     </section>
 
 
-
-
-
-    <!-- ========================= -->
-    <!-- CORE EXPERTISE -->
-    <!-- ========================= -->
-
-    <section class="expertise">
-
-        <div class="container">
-
-            <h2>
-
-                Core Expertise
-
-            </h2>
-
-            <div class="expertise-grid">
-
-                <div class="expertise-card">
-
-                    <i class="fa-solid fa-users"></i>
-
-                    <h3>CRM Management</h3>
-
-                    <p>
-
-                        Customer relationship management,
-                        pipelines,
-                        organization,
-                        and reporting.
-
-                    </p>
-
-                </div>
-
-                <div class="expertise-card">
-
-                    <i class="fa-solid fa-gears"></i>
-
-                    <h3>Operations</h3>
-
-                    <p>
-
-                        Business process improvement,
-                        workflow optimization,
-                        and project coordination.
-
-                    </p>
-
-                </div>
-
-                <div class="expertise-card">
-
-                    <i class="fa-solid fa-clipboard"></i>
-
-                    <h3>Administration</h3>
-
-                    <p>
-
-                        Documentation,
-                        scheduling,
-                        SOP creation,
-                        and business support.
-
-                    </p>
-
-                </div>
-
-                <div class="expertise-card">
-
-                    <i class="fa-solid fa-bullseye"></i>
-
-                    <h3>Lead Generation</h3>
-
-                    <p>
-
-                        Prospect research,
-                        outreach,
-                        CRM organization,
-                        and sales support.
-
-                    </p>
-
-                </div>
-
-                <div class="expertise-card">
-
-                    <i class="fa-solid fa-bullhorn"></i>
-
-                    <h3>Marketing Support</h3>
-
-                    <p>
-
-                        Campaign coordination,
-                        social media,
-                        content management,
-                        and reporting.
-
-                    </p>
-
-                </div>
-
-                <div class="expertise-card">
-
-                    <i class="fa-solid fa-globe"></i>
-
-                    <h3>WordPress</h3>
-
-                    <p>
-
-                        Website updates,
-                        landing pages,
-                        and content management.
-
-                    </p>
-
-                </div>
-
-                <div class="expertise-card">
-
-                    <i class="fa-solid fa-palette"></i>
-
-                    <h3>Graphic Design</h3>
-
-                    <p>
-
-                        Marketing graphics,
-                        presentations,
-                        and visual branding.
-
-                    </p>
-
-                </div>
-
-                <div class="expertise-card">
-
-                    <i class="fa-solid fa-video"></i>
-
-                    <h3>Video Editing</h3>
-
-                    <p>
-
-                        Promotional videos,
-                        social media content,
-                        and business presentations.
-
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-
-
-    <!-- ========================= -->
-    <!-- PHILOSOPHY -->
-    <!-- ========================= -->
+    <!-- =========================================================
+         PART 2 ENDS HERE
+         ========================================================= -->
+    <!-- =========================================================
+         MY PHILOSOPHY
+         ========================================================= -->
 
     <section class="philosophy">
 
         <div class="container">
 
             <h2>
-
                 My Philosophy
-
             </h2>
+
 
             <blockquote>
 
@@ -821,6 +1546,7 @@
                 They grow because their systems become smarter."
 
             </blockquote>
+
 
             <p>
 
@@ -841,23 +1567,262 @@
     </section>
 
 
+    <!-- =========================================================
+         CORE EXPERTISE
+         ========================================================= -->
+
+    <section class="expertise">
+
+        <div class="container">
+
+            <h2>
+                Core Expertise
+            </h2>
 
 
+            <!-- =================================================
+                 CORE EXPERTISE CARDS
+                 ================================================= -->
 
-    <!-- ========================= -->
-    <!-- FOOTER -->
-    <!-- ========================= -->
+            <div class="expertise-grid">
 
-    
-<section class="page-hero">
+
+                <!-- CRM MANAGEMENT -->
+
+                <div class="expertise-card">
+
+                    <i class="fa-solid fa-users"></i>
+
+                    <h3>
+                        CRM Management
+                    </h3>
+
+                    <p>
+                        Customer relationship management,
+                        pipelines,
+                        organization,
+                        and reporting.
+                    </p>
+
+                </div>
+
+
+                <!-- OPERATIONS -->
+
+                <div class="expertise-card">
+
+                    <i class="fa-solid fa-gears"></i>
+
+                    <h3>
+                        Operations
+                    </h3>
+
+                    <p>
+                        Business process improvement,
+                        workflow optimization,
+                        and project coordination.
+                    </p>
+
+                </div>
+
+
+                <!-- ADMINISTRATION -->
+
+                <div class="expertise-card">
+
+                    <i class="fa-solid fa-clipboard"></i>
+
+                    <h3>
+                        Administration
+                    </h3>
+
+                    <p>
+                        Documentation,
+                        scheduling,
+                        SOP creation,
+                        and business support.
+                    </p>
+
+                </div>
+
+
+                <!-- LEAD GENERATION -->
+
+                <div class="expertise-card">
+
+                    <i class="fa-solid fa-bullseye"></i>
+
+                    <h3>
+                        Lead Generation
+                    </h3>
+
+                    <p>
+                        Prospect research,
+                        outreach,
+                        CRM organization,
+                        and sales support.
+                    </p>
+
+                </div>
+
+
+                <!-- MARKETING SUPPORT -->
+
+                <div class="expertise-card">
+
+                    <i class="fa-solid fa-bullhorn"></i>
+
+                    <h3>
+                        Marketing Support
+                    </h3>
+
+                    <p>
+                        Campaign coordination,
+                        social media,
+                        content management,
+                        and reporting.
+                    </p>
+
+                </div>
+
+
+                <!-- WORDPRESS -->
+
+                <div class="expertise-card">
+
+                    <i class="fa-solid fa-globe"></i>
+
+                    <h3>
+                        WordPress
+                    </h3>
+
+                    <p>
+                        Website updates,
+                        landing pages,
+                        and content management.
+                    </p>
+
+                </div>
+
+
+                <!-- GRAPHIC DESIGN -->
+
+                <div class="expertise-card">
+
+                    <i class="fa-solid fa-palette"></i>
+
+                    <h3>
+                        Graphic Design
+                    </h3>
+
+                    <p>
+                        Marketing graphics,
+                        presentations,
+                        and visual branding.
+                    </p>
+
+                </div>
+
+
+                <!-- VIDEO EDITING -->
+
+                <div class="expertise-card">
+
+                    <i class="fa-solid fa-video"></i>
+
+                    <h3>
+                        Video Editing
+                    </h3>
+
+                    <p>
+                        Promotional videos,
+                        social media content,
+                        and business presentations.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- =================================================
+                 HOW I CAN HELP
+                 NOW INSIDE CORE EXPERTISE
+                 ================================================= -->
+
+            <div class="expertise-help">
+
+                <h3>
+                    How I Can Help
+                </h3>
+
+
+                <div class="expertise-grid">
+
+
+                    <div class="expertise-card">
+                        CRM Management
+                    </div>
+
+
+                    <div class="expertise-card">
+                        Operations Support
+                    </div>
+
+
+                    <div class="expertise-card">
+                        Administrative Assistance
+                    </div>
+
+
+                    <div class="expertise-card">
+                        Lead Generation
+                    </div>
+
+
+                    <div class="expertise-card">
+                        Workflow Optimization
+                    </div>
+
+
+                    <div class="expertise-card">
+                        Marketing Support
+                    </div>
+
+
+                    <div class="expertise-card">
+                        WordPress Management
+                    </div>
+
+
+                    <div class="expertise-card">
+                        Graphic Design
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         CONTACT PAGE HERO
+         ========================================================= -->
+
+    <section class="page-hero">
 
         <div class="container">
 
             <span class="hero-tag">
-
                 CONTACT
-
             </span>
+
 
             <h1>
 
@@ -868,6 +1833,7 @@
                 Together
 
             </h1>
+
 
             <p>
 
@@ -886,12 +1852,9 @@
     </section>
 
 
-
-
-
-    <!-- ========================= -->
-    <!-- CONTACT -->
-    <!-- ========================= -->
+    <!-- =========================================================
+         CONTACT
+         ========================================================= -->
 
     <section id="contact" class="contact-page">
 
@@ -899,15 +1862,17 @@
 
             <div class="contact-grid">
 
-                <!-- LEFT -->
+
+                <!-- =================================================
+                     LEFT — CONTACT INFORMATION
+                     ================================================= -->
 
                 <div class="contact-info">
 
                     <h2>
-
                         Get In Touch
-
                     </h2>
+
 
                     <p>
 
@@ -920,23 +1885,29 @@
 
                     </p>
 
+
+                    <!-- EMAIL -->
+
                     <div class="contact-item">
 
                         <i class="fa-solid fa-envelope"></i>
 
                         <div>
 
-                            <h4>Email</h4>
+                            <h4>
+                                Email
+                            </h4>
 
                             <span>
-
                                 m.tinonas21@gmail.com
-
                             </span>
 
                         </div>
 
                     </div>
+
+
+                    <!-- GITHUB -->
 
                     <div class="contact-item">
 
@@ -944,18 +1915,20 @@
 
                         <div>
 
-                            <h4>GitHub</h4>
+                            <h4>
+                                GitHub
+                            </h4>
 
                             <span>
-
                                 github.com/ghostofspartaaxe69-rgb
-
                             </span>
 
                         </div>
-                        </div>
 
                     </div>
+
+
+                    <!-- LOCATION -->
 
                     <div class="contact-item">
 
@@ -963,42 +1936,37 @@
 
                         <div>
 
-                            <h4>Location</h4>
+                            <h4>
+                                Location
+                            </h4>
 
                             <span>
-
                                 Philippines
-
                             </span>
 
                         </div>
 
                     </div>
 
-                    <a href="assets/document/Marvintinonas.pdf"
-                        download
 
-                        class="btn-primary">
-
-                        Download CV
-
-                    </a>
+                    <!-- =================================================
+                         NO DOWNLOAD CV BUTTON HERE.
+                         HERO + ABOUT ALREADY HAVE THE TWO CV BUTTONS.
+                         ================================================= -->
 
                 </div>
 
 
-
-
-
-                <!-- RIGHT -->
+                <!-- =================================================
+                     RIGHT — CONTACT FORM
+                     ================================================= -->
 
                 <div class="contact-form">
 
                     <h2>
-
                         Send Me a Message
-
                     </h2>
+
 
                     <p>
 
@@ -1007,89 +1975,23 @@
 
                     </p>
 
-                    <div class="hubspot-form" aria-label="Contact form">
-                        <div class="hs-form-frame"
+
+                    <div
+                        class="hubspot-form"
+                        aria-label="Contact form">
+
+                        <div
+                            class="hs-form-frame"
                             data-region="na2"
                             data-form-id="bac4f53a-863a-4225-9652-7d38a6b5b32e"
                             data-portal-id="247037735">
+
                         </div>
+
                     </div>
 
                 </div>
 
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-
-
-    <!-- ========================= -->
-    <!-- SERVICES -->
-    <!-- ========================= -->
-
-    <section class="services-overview">
-
-        <div class="container">
-
-            <h2>
-
-                How I Can Help
-
-            </h2>
-
-            <div class="expertise-grid">
-
-                <div class="expertise-card">
-
-                    CRM Management
-
-                </div>
-
-                <div class="expertise-card">
-
-                    Operations Support
-
-                </div>
-
-                <div class="expertise-card">
-
-                    Administrative Assistance
-
-                </div>
-
-                <div class="expertise-card">
-
-                    Lead Generation
-
-                </div>
-
-                <div class="expertise-card">
-
-                    Workflow Optimization
-
-                </div>
-
-                <div class="expertise-card">
-
-                    Marketing Support
-
-                </div>
-
-                <div class="expertise-card">
-
-                    WordPress Management
-
-                </div>
-
-                <div class="expertise-card">
-
-                    Graphic Design
-
-                </div>
 
             </div>
 
@@ -1098,33 +2000,26 @@
     </section>
 
 
-
-
-
-    <!-- ========================= -->
-    <!-- CALL TO ACTION -->
-    <!-- ========================= -->
+    <!-- =========================================================
+         CALL TO ACTION
+         ========================================================= -->
 
     <section class="contact-cta">
 
         <div class="container">
 
             <h2>
-
                 Ready to Improve Your Business Operations?
-
             </h2>
 
             <p>
-
                 Let's work together to build organized systems,
                 improve workflows,
                 and help your business operate more efficiently.
-
             </p>
 
-            <a href="mailto:m.tinonas21@gmail.com"
-
+            <a
+                href="mailto:m.tinonas21@gmail.com"
                 class="btn-primary">
 
                 Start a Conversation
@@ -1136,207 +2031,781 @@
     </section>
 
 
+    <!-- =========================================================
+         PART 3 ENDS HERE
+         ========================================================= -->
+    <!-- =========================================================
+         PROJECT PREVIEW MODAL
+         ========================================================= -->
+
+    <div
+        class="solution-modal"
+        id="solution-modal"
+        hidden>
+
+        <div
+            class="solution-modal-backdrop"
+            data-modal-close>
+        </div>
 
 
+        <section
+            class="solution-modal-dialog"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="solution-modal-title">
 
-    <!-- ========================= -->
-    <!-- FOOTER -->
-    <!-- ========================= -->
 
-    
-<div class="solution-modal" id="solution-modal" hidden>
-        <div class="solution-modal-backdrop" data-modal-close></div>
-        <section class="solution-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="solution-modal-title">
+            <!-- MODAL HEADER -->
+
             <div class="solution-modal-header">
+
                 <div>
-                    <p class="solution-modal-kicker">Project Preview</p>
+
+                    <p class="solution-modal-kicker">
+                        Project Preview
+                    </p>
+
                     <h2 id="solution-modal-title"></h2>
+
                 </div>
-                <button type="button" class="solution-modal-close" data-modal-close aria-label="Close preview"><i class="fa-solid fa-xmark"></i></button>
+
+
+                <button
+                    type="button"
+                    class="solution-modal-close"
+                    data-modal-close
+                    aria-label="Close preview">
+
+                    <i class="fa-solid fa-xmark"></i>
+
+                </button>
+
             </div>
+
+
+            <!-- GALLERY -->
 
             <div class="solution-gallery">
-                <button type="button" class="solution-gallery-arrow solution-gallery-arrow--previous" aria-label="Show previous file"><i class="fa-solid fa-arrow-left"></i></button>
+
+                <button
+                    type="button"
+                    class="solution-gallery-arrow solution-gallery-arrow--previous"
+                    aria-label="Show previous file">
+
+                    <i class="fa-solid fa-arrow-left"></i>
+
+                </button>
+
+
                 <div class="solution-gallery-stage"></div>
-                <button type="button" class="solution-gallery-arrow solution-gallery-arrow--next" aria-label="Show next file"><i class="fa-solid fa-arrow-right"></i></button>
+
+
+                <button
+                    type="button"
+                    class="solution-gallery-arrow solution-gallery-arrow--next"
+                    aria-label="Show next file">
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
             </div>
+
+
+            <!-- GALLERY INFORMATION -->
 
             <div class="solution-gallery-meta">
+
                 <p class="solution-gallery-caption"></p>
-                <p class="solution-gallery-count" aria-live="polite"></p>
+
+                <p
+                    class="solution-gallery-count"
+                    aria-live="polite">
+                </p>
+
             </div>
-            <div class="solution-gallery-thumbnails" aria-label="Preview files"></div>
+
+
+            <!-- THUMBNAILS -->
+
+            <div
+                class="solution-gallery-thumbnails"
+                aria-label="Preview files">
+            </div>
+
+
         </section>
+
     </div>
+
+
+    <!-- =========================================================
+         FOOTER
+         ========================================================= -->
+
     <footer>
-        <div class="container"><p>&copy; 2026 Marvin Tinonas. All Rights Reserved.</p></div>
+
+        <div class="container">
+
+            <p>
+                &copy; 2026 Marvin Tinonas.
+                All Rights Reserved.
+            </p>
+
+        </div>
+
     </footer>
-    <script src="https://js-na2.hsforms.net/forms/embed/247037735.js" defer></script>
+
+
+    <!-- =========================================================
+         HUBSPOT
+         ========================================================= -->
+
+    <script
+        src="https://js-na2.hsforms.net/forms/embed/247037735.js"
+        defer>
+    </script>
+
+
+    <!-- =========================================================
+         WEBSITE SCRIPTS
+         ========================================================= -->
+
     <script src="js/navigation.js"></script>
+
     <script src="js/animations.js"></script>
+
     <script src="js/projects.js"></script>
+
     <script src="js/script.js"></script>
-<script>
-    (() => {
-        const galleries = {
-            crm: {
-                title: 'CRM Workflow Template',
-                items: [
-                { src: 'assets/projects/hubspot/hubspot-workflow.webp', alt: 'HubSpot workflow automation', caption: 'Workflow automation' },
-                { src: 'assets/projects/hubspot/hubspot-dashboard.webp', alt: 'HubSpot dashboard', caption: 'CRM dashboard' },
-                { src: 'assets/projects/hubspot/hubspot-marketing-email.webp', alt: 'HubSpot marketing email', caption: 'Marketing email' },
-                { src: 'assets/projects/hubspot/hubspot-email-report.webp', alt: 'HubSpot email report', caption: 'Email report' }
-                ]
-            },
-            'lead-tracker': {
-                title: 'Lead Management Tracker',
-                items: [
-                { src: 'assets/projects/lead-tracker/lead-tracker-sheet.webp', alt: 'Lead tracker spreadsheet', caption: 'Lead tracker spreadsheet' },
-                { src: 'assets/projects/lead-tracker/lead-management-board.webp', alt: 'Lead management board', caption: 'Lead management board' }
-                ]
-            },
-            'onboarding-sop': {
-                title: 'Customer Onboarding SOP',
-                items: [
-                { src: 'assets/projects/customer-onboarding-sop/cover.webp', alt: 'Customer onboarding SOP cover', caption: 'SOP cover' },
-                { src: 'assets/projects/customer-onboarding-sop/overview.webp', alt: 'Customer onboarding overview', caption: 'Process overview' },
-                { src: 'assets/projects/customer-onboarding-sop/onboarding-process.webp', alt: 'Customer onboarding process', caption: 'Onboarding process' },
-                { src: 'assets/projects/customer-onboarding-sop/process-flow.webp', alt: 'Customer onboarding process flow', caption: 'Process flow' }
-                ]
-            },
-            'social-video': {
-                title: 'Social Media Content Reel',
-                items: [
-                { src: 'assets/projects/video-editing/1.mp4', type: 'video', caption: 'Social media reel 1' },
-                { src: 'assets/projects/video-editing/2.mp4', type: 'video', caption: 'Social media reel 2' },
-                { src: 'assets/projects/video-editing/3.mp4', type: 'video', caption: 'Social media reel 3' },
-                { src: 'assets/projects/video-editing/4.mp4', type: 'video', caption: 'Social media reel 4' },
-                { src: 'assets/projects/video-editing/social-media-reel.mp4', type: 'video', caption: 'Social media reel' },
-                { src: 'assets/projects/video-editing/promotional-video.mp4', type: 'video', caption: 'Promotional video' },
-                { src: 'assets/projects/video-editing/motion-graphics.mp4', type: 'video', caption: 'Motion graphics' }
-                ]
-            },
-            'landing-page': {
-                title: 'Landing Page Concept',
-                items: [
-                { src: 'assets/projects/landing-page/homepage.webp', alt: 'Landing page homepage', caption: 'Homepage' },
-                { src: 'assets/projects/landing-page/menu.webp', alt: 'Landing page menu', caption: 'Menu page' },
-                { src: 'assets/projects/landing-page/about.webp', alt: 'Landing page about section', caption: 'About page' },
-                { src: 'assets/projects/landing-page/contact.webp', alt: 'Landing page contact section', caption: 'Contact page' },
-                { src: 'assets/projects/landing-page/mobile.webp', alt: 'Landing page mobile layout', caption: 'Mobile layout' }
-                ]
-            },
-            'email-campaign': {
-                title: 'Email Marketing Campaign',
-                items: [
-                { src: 'assets/projects/hubspot/hubspot-marketing-email.webp', alt: 'Marketing email', caption: 'Marketing email' },
-                { src: 'assets/projects/hubspot/hubspot-email-report.webp', alt: 'Email campaign report', caption: 'Campaign report' },
-                { src: 'assets/projects/hubspot/hubspot-dashboard.webp', alt: 'Campaign dashboard', caption: 'Campaign dashboard' }
-                ]
+
+
+    <!-- =========================================================
+         PROJECT GALLERY SCRIPT
+         ========================================================= -->
+
+    <script>
+
+        (() => {
+
+
+            /* =====================================================
+               GALLERY DATA
+               ===================================================== */
+
+            const galleries = {
+
+
+                crm: {
+
+                    title: 'CRM Workflow Template',
+
+                    items: [
+
+                        {
+                            src: 'assets/projects/hubspot/hubspot-workflow.webp',
+                            alt: 'HubSpot workflow automation',
+                            caption: 'Workflow automation'
+                        },
+
+                        {
+                            src: 'assets/projects/hubspot/hubspot-dashboard.webp',
+                            alt: 'HubSpot dashboard',
+                            caption: 'CRM dashboard'
+                        },
+
+                        {
+                            src: 'assets/projects/hubspot/hubspot-marketing-email.webp',
+                            alt: 'HubSpot marketing email',
+                            caption: 'Marketing email'
+                        },
+
+                        {
+                            src: 'assets/projects/hubspot/hubspot-email-report.webp',
+                            alt: 'HubSpot email report',
+                            caption: 'Email report'
+                        }
+
+                    ]
+
+                },
+
+
+                'lead-tracker': {
+
+                    title: 'Lead Management Tracker',
+
+                    items: [
+
+                        {
+                            src: 'assets/projects/lead-tracker/lead-tracker-sheet.webp',
+                            alt: 'Lead tracker spreadsheet',
+                            caption: 'Lead tracker spreadsheet'
+                        },
+
+                        {
+                            src: 'assets/projects/lead-tracker/lead-management-board.webp',
+                            alt: 'Lead management board',
+                            caption: 'Lead management board'
+                        }
+
+                    ]
+
+                },
+
+
+                'onboarding-sop': {
+
+                    title: 'Customer Onboarding SOP',
+
+                    items: [
+
+                        {
+                            src: 'assets/projects/customer-onboarding-sop/cover.webp',
+                            alt: 'Customer onboarding SOP cover',
+                            caption: 'SOP cover'
+                        },
+
+                        {
+                            src: 'assets/projects/customer-onboarding-sop/overview.webp',
+                            alt: 'Customer onboarding overview',
+                            caption: 'Process overview'
+                        },
+
+                        {
+                            src: 'assets/projects/customer-onboarding-sop/onboarding-process.webp',
+                            alt: 'Customer onboarding process',
+                            caption: 'Onboarding process'
+                        },
+
+                        {
+                            src: 'assets/projects/customer-onboarding-sop/process-flow.webp',
+                            alt: 'Customer onboarding process flow',
+                            caption: 'Process flow'
+                        }
+
+                    ]
+
+                },
+
+
+                'social-video': {
+
+                    title: 'Social Media Content Reel',
+
+                    items: [
+
+                        {
+                            src: 'assets/projects/video-editing/1.mp4',
+                            type: 'video',
+                            caption: 'Social media reel 1'
+                        },
+
+                        {
+                            src: 'assets/projects/video-editing/2.mp4',
+                            type: 'video',
+                            caption: 'Social media reel 2'
+                        },
+
+                        {
+                            src: 'assets/projects/video-editing/3.mp4',
+                            type: 'video',
+                            caption: 'Social media reel 3'
+                        },
+
+                        {
+                            src: 'assets/projects/video-editing/4.mp4',
+                            type: 'video',
+                            caption: 'Social media reel 4'
+                        },
+
+                        {
+                            src: 'assets/projects/video-editing/social-media-reel.mp4',
+                            type: 'video',
+                            caption: 'Social media reel'
+                        },
+
+                        {
+                            src: 'assets/projects/video-editing/promotional-video.mp4',
+                            type: 'video',
+                            caption: 'Promotional video'
+                        },
+
+                        {
+                            src: 'assets/projects/video-editing/motion-graphics.mp4',
+                            type: 'video',
+                            caption: 'Motion graphics'
+                        }
+
+                    ]
+
+                },
+
+
+                'landing-page': {
+
+                    title: 'Landing Page Concept',
+
+                    items: [
+
+                        {
+                            src: 'assets/projects/landing-page/homepage.webp',
+                            alt: 'Landing page homepage',
+                            caption: 'Homepage'
+                        },
+
+                        {
+                            src: 'assets/projects/landing-page/menu.webp',
+                            alt: 'Landing page menu',
+                            caption: 'Menu page'
+                        },
+
+                        {
+                            src: 'assets/projects/landing-page/about.webp',
+                            alt: 'Landing page about section',
+                            caption: 'About page'
+                        },
+
+                        {
+                            src: 'assets/projects/landing-page/contact.webp',
+                            alt: 'Landing page contact section',
+                            caption: 'Contact page'
+                        },
+
+                        {
+                            src: 'assets/projects/landing-page/mobile.webp',
+                            alt: 'Landing page mobile layout',
+                            caption: 'Mobile layout'
+                        }
+
+                    ]
+
+                },
+
+
+                'email-campaign': {
+
+                    title: 'Email Marketing Campaign',
+
+                    items: [
+
+                        {
+                            src: 'assets/projects/hubspot/hubspot-marketing-email.webp',
+                            alt: 'Marketing email',
+                            caption: 'Marketing email'
+                        },
+
+                        {
+                            src: 'assets/projects/hubspot/hubspot-email-report.webp',
+                            alt: 'Email campaign report',
+                            caption: 'Campaign report'
+                        },
+
+                        {
+                            src: 'assets/projects/hubspot/hubspot-dashboard.webp',
+                            alt: 'Campaign dashboard',
+                            caption: 'Campaign dashboard'
+                        }
+
+                    ]
+
+                }
+
+            };
+
+
+            /* =====================================================
+               MODAL ELEMENTS
+               ===================================================== */
+
+            const modal =
+                document.querySelector('#solution-modal');
+
+            const modalTitle =
+                modal.querySelector('#solution-modal-title');
+
+            const stage =
+                modal.querySelector('.solution-gallery-stage');
+
+            const caption =
+                modal.querySelector('.solution-gallery-caption');
+
+            const count =
+                modal.querySelector('.solution-gallery-count');
+
+            const thumbnails =
+                modal.querySelector('.solution-gallery-thumbnails');
+
+            const previousButton =
+                modal.querySelector(
+                    '.solution-gallery-arrow--previous'
+                );
+
+            const nextButton =
+                modal.querySelector(
+                    '.solution-gallery-arrow--next'
+                );
+
+
+            /* =====================================================
+               STATE
+               ===================================================== */
+
+            let activeGallery;
+
+            let activeIndex = 0;
+
+            let triggerElement;
+
+
+            /* =====================================================
+               RENDER GALLERY
+               ===================================================== */
+
+            function renderGallery() {
+
+                const gallery =
+                    galleries[activeGallery];
+
+                const item =
+                    gallery.items[activeIndex];
+
+
+                modalTitle.textContent =
+                    gallery.title;
+
+
+                caption.textContent =
+                    item.caption;
+
+
+                count.textContent =
+                    `${activeIndex + 1} of ${gallery.items.length}`;
+
+
+                stage.replaceChildren();
+
+
+                const media =
+                    document.createElement(
+                        item.type === 'video'
+                            ? 'video'
+                            : 'img'
+                    );
+
+
+                media.src =
+                    item.src;
+
+
+                media.className =
+                    'solution-gallery-media';
+
+
+                if (item.type === 'video') {
+
+                    media.controls = true;
+
+                    media.autoplay = true;
+
+                    media.playsInline = true;
+
+                } else {
+
+                    media.alt =
+                        item.alt;
+
+                }
+
+
+                stage.append(media);
+
+
+                thumbnails.replaceChildren();
+
+
+                gallery.items.forEach(
+                    (galleryItem, index) => {
+
+                        const thumbnail =
+                            document.createElement('button');
+
+
+                        thumbnail.type =
+                            'button';
+
+
+                        thumbnail.className =
+                            'solution-gallery-thumbnail';
+
+
+                        thumbnail.classList.toggle(
+                            'is-active',
+                            index === activeIndex
+                        );
+
+
+                        thumbnail.setAttribute(
+                            'aria-label',
+                            `Show ${galleryItem.caption}`
+                        );
+
+
+                        thumbnail.addEventListener(
+                            'click',
+                            () => {
+
+                                activeIndex =
+                                    index;
+
+                                renderGallery();
+
+                            }
+                        );
+
+
+                        if (
+                            galleryItem.type ===
+                            'video'
+                        ) {
+
+                            thumbnail.innerHTML =
+                                '<i class="fa-solid fa-play"></i>';
+
+                        } else {
+
+                            const image =
+                                document.createElement('img');
+
+
+                            image.src =
+                                galleryItem.src;
+
+
+                            image.alt =
+                                '';
+
+
+                            thumbnail.append(image);
+
+                        }
+
+
+                        thumbnails.append(
+                            thumbnail
+                        );
+
+                    }
+                );
+
+
+                const hasMultipleItems =
+                    gallery.items.length > 1;
+
+
+                previousButton.hidden =
+                    !hasMultipleItems;
+
+
+                nextButton.hidden =
+                    !hasMultipleItems;
+
             }
-        };
 
-        const modal = document.querySelector('#solution-modal');
-        const modalTitle = modal.querySelector('#solution-modal-title');
-        const stage = modal.querySelector('.solution-gallery-stage');
-        const caption = modal.querySelector('.solution-gallery-caption');
-        const count = modal.querySelector('.solution-gallery-count');
-        const thumbnails = modal.querySelector('.solution-gallery-thumbnails');
-        const previousButton = modal.querySelector('.solution-gallery-arrow--previous');
-        const nextButton = modal.querySelector('.solution-gallery-arrow--next');
-        let activeGallery;
-        let activeIndex = 0;
-        let triggerElement;
 
-        function renderGallery() {
-            const gallery = galleries[activeGallery];
-            const item = gallery.items[activeIndex];
-            modalTitle.textContent = gallery.title;
-            caption.textContent = item.caption;
-            count.textContent = `${activeIndex + 1} of ${gallery.items.length}`;
-            stage.replaceChildren();
+            /* =====================================================
+               OPEN GALLERY
+               ===================================================== */
 
-            const media = document.createElement(item.type === 'video' ? 'video' : 'img');
-            media.src = item.src;
-            media.className = 'solution-gallery-media';
-            if (item.type === 'video') {
-                media.controls = true;
-                media.autoplay = true;
-                media.playsInline = true;
-            } else {
-                media.alt = item.alt;
+            function openGallery(
+                galleryId,
+                trigger
+            ) {
+
+                activeGallery =
+                    galleryId;
+
+
+                activeIndex =
+                    0;
+
+
+                triggerElement =
+                    trigger;
+
+
+                renderGallery();
+
+
+                modal.hidden =
+                    false;
+
+
+                document.body.classList.add(
+                    'solution-modal-open'
+                );
+
+
+                modal
+                    .querySelector(
+                        '.solution-modal-close'
+                    )
+                    .focus();
+
             }
-            stage.append(media);
 
-            thumbnails.replaceChildren();
-            gallery.items.forEach((galleryItem, index) => {
-                const thumbnail = document.createElement('button');
-                thumbnail.type = 'button';
-                thumbnail.className = 'solution-gallery-thumbnail';
-                thumbnail.classList.toggle('is-active', index === activeIndex);
-                thumbnail.setAttribute('aria-label', `Show ${galleryItem.caption}`);
-                thumbnail.addEventListener('click', () => {
-                    activeIndex = index;
-                    renderGallery();
+
+            /* =====================================================
+               CLOSE GALLERY
+               ===================================================== */
+
+            function closeGallery() {
+
+                if (modal.hidden)
+                    return;
+
+
+                modal.hidden =
+                    true;
+
+
+                document.body.classList.remove(
+                    'solution-modal-open'
+                );
+
+
+                stage.replaceChildren();
+
+
+                triggerElement?.focus();
+
+            }
+
+
+            /* =====================================================
+               MOVE BETWEEN ITEMS
+               ===================================================== */
+
+            function moveGallery(
+                direction
+            ) {
+
+                const items =
+                    galleries[
+                        activeGallery
+                    ].items;
+
+
+                activeIndex =
+                    (
+                        activeIndex +
+                        direction +
+                        items.length
+                    ) % items.length;
+
+
+                renderGallery();
+
+            }
+
+
+            /* =====================================================
+               OPEN GALLERY BUTTONS
+               ===================================================== */
+
+            document
+                .querySelectorAll('[data-gallery]')
+                .forEach((trigger) => {
+
+                    trigger.addEventListener(
+                        'click',
+                        () => {
+
+                            openGallery(
+                                trigger.dataset.gallery,
+                                trigger
+                            );
+
+                        }
+                    );
+
                 });
 
-                if (galleryItem.type === 'video') {
-                    thumbnail.innerHTML = '<i class="fa-solid fa-play"></i>';
-                } else {
-                    const image = document.createElement('img');
-                    image.src = galleryItem.src;
-                    image.alt = '';
-                    thumbnail.append(image);
+
+            /* =====================================================
+               CLOSE BUTTONS
+               ===================================================== */
+
+            modal
+                .querySelectorAll('[data-modal-close]')
+                .forEach((button) => {
+
+                    button.addEventListener(
+                        'click',
+                        closeGallery
+                    );
+
+                });
+
+
+            /* =====================================================
+               ARROW BUTTONS
+               ===================================================== */
+
+            previousButton.addEventListener(
+                'click',
+                () => moveGallery(-1)
+            );
+
+
+            nextButton.addEventListener(
+                'click',
+                () => moveGallery(1)
+            );
+
+
+            /* =====================================================
+               KEYBOARD CONTROLS
+               ===================================================== */
+
+            document.addEventListener(
+                'keydown',
+                (event) => {
+
+                    if (modal.hidden)
+                        return;
+
+
+                    if (event.key === 'Escape') {
+
+                        closeGallery();
+
+                    }
+
+
+                    if (event.key === 'ArrowLeft') {
+
+                        moveGallery(-1);
+
+                    }
+
+
+                    if (event.key === 'ArrowRight') {
+
+                        moveGallery(1);
+
+                    }
+
                 }
-                thumbnails.append(thumbnail);
-            });
+            );
 
-            const hasMultipleItems = gallery.items.length > 1;
-            previousButton.hidden = !hasMultipleItems;
-            nextButton.hidden = !hasMultipleItems;
-        }
 
-        function openGallery(galleryId, trigger) {
-            activeGallery = galleryId;
-            activeIndex = 0;
-            triggerElement = trigger;
-            renderGallery();
-            modal.hidden = false;
-            document.body.classList.add('solution-modal-open');
-            modal.querySelector('.solution-modal-close').focus();
-        }
+        })();
 
-        function closeGallery() {
-            if (modal.hidden) return;
-            modal.hidden = true;
-            document.body.classList.remove('solution-modal-open');
-            stage.replaceChildren();
-            triggerElement?.focus();
-        }
+    </script>
 
-        function moveGallery(direction) {
-            const items = galleries[activeGallery].items;
-            activeIndex = (activeIndex + direction + items.length) % items.length;
-            renderGallery();
-        }
 
-        document.querySelectorAll('[data-gallery]').forEach((trigger) => {
-            trigger.addEventListener('click', () => openGallery(trigger.dataset.gallery, trigger));
-        });
-
-        modal.querySelectorAll('[data-modal-close]').forEach((button) => {
-            button.addEventListener('click', closeGallery);
-        });
-        previousButton.addEventListener('click', () => moveGallery(-1));
-        nextButton.addEventListener('click', () => moveGallery(1));
-
-        document.addEventListener('keydown', (event) => {
-            if (modal.hidden) return;
-            if (event.key === 'Escape') closeGallery();
-            if (event.key === 'ArrowLeft') moveGallery(-1);
-            if (event.key === 'ArrowRight') moveGallery(1);
-        });
-    })();
-</script>
 </body>
+
 </html>

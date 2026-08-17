@@ -1,273 +1,2150 @@
-/* ==========================================
-   LARGE LAPTOPS
-========================================== */
+/* =========================================================
+   MARVIN TINONAS PORTFOLIO
+   RESPONSIVE SYSTEM
+   ---------------------------------------------------------
+   Desktop → Tablet → Mobile
+   Futuristic Blue / Navy Design
+   ========================================================= */
+
+
+/* =========================================================
+   LARGE DESKTOP
+   1400PX AND BELOW
+   ========================================================= */
 
 @media (max-width: 1400px) {
 
-    .hero-container,
-    .about-content,
-    .contact-grid {
+    .container {
+        width:
+            90%;
+    }
 
-        gap: 50px;
 
+    .hero-container {
+        width:
+            min(
+                100% - 80px,
+                1240px
+            );
+    }
+
+
+    .hero-left {
+        max-width:
+            520px;
+    }
+
+
+    .hero-left h1 {
+        font-size:
+            clamp(
+                3.2rem,
+                5vw,
+                4.5rem
+            );
+    }
+
+
+    .solutions-shell {
+        width:
+            90%;
+    }
+
+
+    .solutions-grid {
+        gap:
+            24px;
+    }
+
+
+    .tools-grid {
+        gap:
+            22px;
+    }
+
+
+    .expertise-grid {
+        gap:
+            22px;
     }
 
 }
 
 
-
-/* ==========================================
-   LAPTOPS
-========================================== */
+/* =========================================================
+   TABLET / SMALL LAPTOP
+   1200PX
+   ========================================================= */
 
 @media (max-width: 1200px) {
 
-    :root{
+    :root {
 
-        --hero-title:54px;
-
-        --section-title:38px;
-
-    }
-
-    .hero-container{
-
-        grid-template-columns:1fr;
-
-        text-align:center;
+        --section-padding:
+            100px;
 
     }
 
-    .hero-left p{
 
-        margin-left:auto;
+    /* -------------------------
+       NAVIGATION
+    ------------------------- */
 
-        margin-right:auto;
+    .navbar {
+        width:
+            92%;
+    }
+
+
+    .nav-links {
+        gap:
+            24px;
+    }
+
+
+    /* -------------------------
+       HERO
+    ------------------------- */
+
+    #hero {
+        min-height:
+            720px;
+
+        padding:
+            145px 0 80px;
+    }
+
+
+    .hero-container {
+        width:
+            90%;
+    }
+
+
+    #hero .hero-badges {
+        max-width:
+            470px;
+    }
+
+
+    /* -------------------------
+       SOLUTIONS
+    ------------------------- */
+
+    .solutions-shell {
+        width:
+            90%;
+    }
+
+
+    .solutions-grid {
+        grid-template-columns:
+            repeat(
+                2,
+                minmax(0, 1fr)
+            );
+    }
+
+
+    /* -------------------------
+       TOOLS
+    ------------------------- */
+
+    .tools-grid {
+        grid-template-columns:
+            repeat(
+                3,
+                minmax(0, 1fr)
+            );
+    }
+
+
+    /* -------------------------
+       EXPERTISE
+    ------------------------- */
+
+    .expertise-grid {
+        grid-template-columns:
+            repeat(
+                3,
+                minmax(0, 1fr)
+            );
+    }
+
+
+    /* -------------------------
+       CAREER
+    ------------------------- */
+
+    .career-journey .timeline {
+        grid-template-columns:
+            repeat(
+                2,
+                minmax(0, 1fr)
+            );
+    }
+
+
+    /* -------------------------
+       DECORATION
+       Reduce oversized arcs
+    ------------------------- */
+
+    #hero::after,
+    .contact-page::before {
+
+        width:
+            650px;
+
+        height:
+            650px;
 
     }
 
-    .hero-buttons{
 
-        justify-content:center;
+    .solutions-hero::after,
+    .about-page::before,
+    .expertise::after {
 
-    }
+        width:
+            580px;
 
-    .hero-badges{
-
-        justify-content:center;
-
-    }
-
-    .hero-right{
-
-        margin-top:60px;
-
-    }
-
-    .about-content{
-
-        grid-template-columns:1fr;
-
-        text-align:center;
-
-    }
-
-    .contact-grid{
-
-        grid-template-columns:1fr;
+        height:
+            580px;
 
     }
 
 }
 
 
+/* =========================================================
+   TABLET
+   992PX
+   ========================================================= */
 
-/* ==========================================
-   TABLETS
-========================================== */
+@media (max-width: 992px) {
 
-@media (max-width:992px){
+    :root {
 
-    .services-grid{
-
-        grid-template-columns:repeat(2,1fr);
-
-    }
-
-    .tools-grid{
-
-        grid-template-columns:repeat(3,1fr);
+        --section-padding:
+            90px;
 
     }
 
-    .projects-grid{
 
-        grid-template-columns:repeat(2,1fr);
+    /* -------------------------
+       NAVIGATION
+    ------------------------- */
+
+    .navbar {
+        height:
+            82px;
+    }
+
+
+    .logo img {
+        width:
+            155px;
+    }
+
+
+    .nav-links {
+        gap:
+            18px;
+    }
+
+
+    .nav-links a {
+        font-size:
+            14px;
+    }
+
+
+    .navbar > .btn-primary {
+        padding:
+            12px 20px;
+    }
+
+
+    /* -------------------------
+       HERO
+    ------------------------- */
+
+    #hero {
+
+        min-height:
+            680px;
+
+        padding:
+            135px 0 75px;
 
     }
 
-    .expertise-grid{
 
-        grid-template-columns:repeat(2,1fr);
+    .hero-container {
+        width:
+            90%;
+    }
+
+
+    .hero-left {
+        max-width:
+            560px;
+    }
+
+
+    .hero-left h1 {
+
+        font-size:
+            clamp(
+                3rem,
+                6vw,
+                4rem
+            );
+
+        line-height:
+            1.12;
 
     }
 
-    .feature-grid{
 
-        grid-template-columns:1fr;
+    .hero-left p {
+
+        font-size:
+            17px;
 
     }
 
-    .certifications-grid{
 
-        grid-template-columns:repeat(2, minmax(0, 1fr));
+    #hero .hero-badges {
+
+        grid-template-columns:
+            repeat(
+                2,
+                minmax(0, 1fr)
+            );
+
+        max-width:
+            460px;
+
+    }
+
+
+    #hero .badge {
+
+        min-height:
+            110px;
+
+    }
+
+
+    /* -------------------------
+       SERVICES
+    ------------------------- */
+
+    .services-grid {
+
+        grid-template-columns:
+            repeat(
+                2,
+                minmax(0, 1fr)
+            );
+
+    }
+
+
+    /* -------------------------
+       TOOLS
+    ------------------------- */
+
+    .tools-grid {
+
+        grid-template-columns:
+            repeat(
+                2,
+                minmax(0, 1fr)
+            );
+
+    }
+
+
+    /* -------------------------
+       ABOUT
+    ------------------------- */
+
+    .about-content {
+
+        grid-template-columns:
+            1fr;
+
+        gap:
+            50px;
+
+    }
+
+
+    .about-image {
+
+        max-width:
+            520px;
+
+        margin:
+            0 auto;
+
+    }
+
+
+    /* -------------------------
+       EXPERTISE
+    ------------------------- */
+
+    .expertise-grid {
+
+        grid-template-columns:
+            repeat(
+                2,
+                minmax(0, 1fr)
+            );
+
+    }
+
+
+    /* -------------------------
+       CONTACT
+    ------------------------- */
+
+    .contact-grid {
+
+        grid-template-columns:
+            1fr;
+
+        gap:
+            50px;
+
+    }
+
+
+    /* -------------------------
+       CAREER
+    ------------------------- */
+
+    .career-journey .timeline {
+
+        grid-template-columns:
+            repeat(
+                2,
+                minmax(0, 1fr)
+            );
+
+    }
+
+
+    /* -------------------------
+       PAGE HERO
+    ------------------------- */
+
+    .page-hero {
+
+        padding:
+            135px 0 85px;
+
+    }
+
+
+    .page-hero h1 {
+
+        font-size:
+            clamp(
+                2.7rem,
+                6vw,
+                4rem
+            );
+
+    }
+
+
+    /* -------------------------
+       SOLUTIONS HERO
+    ------------------------- */
+
+    .solutions-hero {
+
+        padding:
+            120px 0 35px;
+
+    }
+
+
+    .solutions-shell {
+
+        grid-template-columns:
+            1fr;
+
+        gap:
+            35px;
+
+    }
+
+
+    .solutions-note {
+
+        max-width:
+            620px;
+
+    }
+
+
+    /* -------------------------
+       DECORATIVE ARCS
+       Make them edge-only
+    ------------------------- */
+
+    #hero::after {
+
+        width:
+            560px;
+
+        height:
+            560px;
+
+        left:
+            -455px;
+
+        opacity:
+            0.55;
+
+    }
+
+
+    .solutions-hero::after {
+
+        width:
+            520px;
+
+        height:
+            520px;
+
+        right:
+            -430px;
+
+        opacity:
+            0.45;
+
+    }
+
+
+    .tools-section::after {
+
+        width:
+            500px;
+
+        height:
+            500px;
+
+        left:
+            -430px;
+
+        opacity:
+            0.42;
+
+    }
+
+
+    .about-page::before {
+
+        width:
+            500px;
+
+        height:
+            500px;
+
+        left:
+            -420px;
+
+        opacity:
+            0.40;
+
+    }
+
+
+    .certifications-section::after {
+
+        width:
+            520px;
+
+        height:
+            520px;
+
+        right:
+            -430px;
+
+        opacity:
+            0.40;
+
+    }
+
+
+    .career-journey::before {
+
+        width:
+            500px;
+
+        height:
+            500px;
+
+        left:
+            -420px;
+
+        opacity:
+            0.36;
+
+    }
+
+
+    .philosophy::after {
+
+        width:
+            500px;
+
+        height:
+            500px;
+
+        right:
+            -420px;
+
+        opacity:
+            0.36;
+
+    }
+
+
+    .expertise::after {
+
+        width:
+            540px;
+
+        height:
+            540px;
+
+        right:
+            -450px;
+
+        opacity:
+            0.38;
+
+    }
+
+
+    .contact-page::before {
+
+        width:
+            560px;
+
+        height:
+            560px;
+
+        left:
+            -470px;
+
+        opacity:
+            0.48;
+
+    }
+
+
+    /* -------------------------
+       HEX PATTERNS
+    ------------------------- */
+
+    .solutions-grid-section::before,
+    .tools-section::before {
+
+        opacity:
+            0.16;
 
     }
 
 }
 
 
-
-/* ==========================================
+/* =========================================================
    MOBILE
-========================================== */
+   768PX
+   ========================================================= */
 
-@media (max-width:768px){
+@media (max-width: 768px) {
 
-    :root{
+    :root {
 
-        --hero-title:42px;
-
-        --section-title:34px;
-
-        --heading:26px;
-
-        --body:16px;
+        --section-padding:
+            80px;
 
     }
 
-    .navbar{
 
-        height:80px;
+    /* -------------------------
+       GLOBAL
+    ------------------------- */
 
-    }
+    body {
 
-    .nav-links{
-
-        display:none;
-
-    }
-
-    .btn-primary{
-
-        padding:14px 24px;
+        overflow-x:
+            hidden;
 
     }
 
-    .btn-secondary{
 
-        padding:14px 24px;
+    .container {
 
-    }
-
-    .services-grid{
-
-        grid-template-columns:1fr;
+        width:
+            90%;
 
     }
 
-    .projects-grid{
 
-        grid-template-columns:1fr;
+    section {
 
-    }
-
-    .tools-grid{
-
-        grid-template-columns:repeat(2,1fr);
+        overflow:
+            hidden;
 
     }
 
-    .expertise-grid{
 
-        grid-template-columns:1fr;
+    /* -------------------------
+       NAVIGATION
+    ------------------------- */
 
-    }
+    header {
 
-    .certifications-grid{
-
-        grid-template-columns:1fr;
-
-    }
-
-    .hero-buttons{
-
-        flex-direction:column;
+        position:
+            fixed;
 
     }
 
-    .hero-badges{
 
-        flex-direction:column;
+    .navbar {
+
+        height:
+            74px;
 
     }
 
-    .page-hero{
 
-        padding-top:140px;
+    .logo img {
+
+        width:
+            140px;
+
+    }
+
+
+    .nav-links {
+
+        display:
+            none;
+
+    }
+
+
+    .navbar > .btn-primary {
+
+        padding:
+            10px 15px;
+
+        font-size:
+            13px;
+
+    }
+
+
+    /* -------------------------
+       HERO
+    ------------------------- */
+
+    #hero {
+
+        min-height:
+            auto;
+
+        padding:
+            125px 0 75px;
+
+    }
+
+
+    .hero-container {
+
+        width:
+            90%;
+
+    }
+
+
+    .hero-left {
+
+        max-width:
+            100%;
+
+    }
+
+
+    .hero-left h1 {
+
+        font-size:
+            clamp(
+                2.5rem,
+                9vw,
+                3.5rem
+            );
+
+        line-height:
+            1.12;
+
+    }
+
+
+    .hero-left p {
+
+        font-size:
+            16px;
+
+        line-height:
+            1.7;
+
+    }
+
+
+    #hero .hero-badges {
+
+        grid-template-columns:
+            repeat(
+                2,
+                minmax(0, 1fr)
+            );
+
+        width:
+            100%;
+
+        max-width:
+            100%;
+
+        gap:
+            10px;
+
+    }
+
+
+    #hero .badge {
+
+        min-height:
+            100px;
+
+        padding:
+            12px 8px;
+
+    }
+
+
+    #hero .badge i {
+
+        font-size:
+            24px;
+
+    }
+
+
+    #hero .badge span {
+
+        font-size:
+            13px;
+
+    }
+
+
+    .hero-buttons {
+
+        flex-direction:
+            column;
+
+        width:
+            100%;
+
+        gap:
+            12px;
+
+    }
+
+
+    .hero-buttons .btn-primary,
+    .hero-buttons .btn-secondary {
+
+        width:
+            100%;
+
+    }
+
+
+    /* -------------------------
+       HERO BACKGROUND
+    ------------------------- */
+
+    .hero-overlay {
+
+        background:
+
+            linear-gradient(
+                180deg,
+                rgba(2, 9, 20, 0.98) 0%,
+                rgba(2, 9, 20, 0.88) 55%,
+                rgba(2, 9, 20, 0.96) 100%
+            );
+
+    }
+
+
+    /* -------------------------
+       SOLUTIONS
+    ------------------------- */
+
+    .solutions-hero {
+
+        padding:
+            105px 0 30px;
+
+    }
+
+
+    .solutions-shell {
+
+        width:
+            90%;
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .solutions-intro h1 {
+
+        font-size:
+            clamp(
+                2.15rem,
+                8vw,
+                3rem
+            );
+
+        line-height:
+            1.12;
+
+    }
+
+
+    .solutions-intro > p:last-child {
+
+        font-size:
+            15px;
+
+    }
+
+
+    .solutions-note {
+
+        width:
+            100%;
+
+        padding:
+            22px;
+
+    }
+
+
+    .solutions-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .solution-card {
+
+        padding:
+            14px;
+
+    }
+
+
+    .solution-card-heading {
+
+        gap:
+            12px;
+
+    }
+
+
+    .solution-card-heading h2 {
+
+        font-size:
+            1.05rem;
+
+    }
+
+
+    .solution-media {
+
+        height:
+            210px;
+
+    }
+
+
+    .solutions-cta-content {
+
+        flex-direction:
+            column;
+
+        align-items:
+            flex-start;
+
+        gap:
+            18px;
+
+    }
+
+
+    .solutions-cta .btn-primary {
+
+        width:
+            100%;
+
+    }
+
+
+    /* -------------------------
+       TOOLS
+    ------------------------- */
+
+    .tools-grid {
+
+        grid-template-columns:
+            repeat(
+                2,
+                minmax(0, 1fr)
+            );
+
+        gap:
+            14px;
+
+    }
+
+
+    .tool-card {
+
+        padding:
+            18px;
+
+    }
+
+
+    .tool-card img {
+
+        max-width:
+            52px;
+
+    }
+
+
+    /* -------------------------
+       ABOUT
+    ------------------------- */
+
+    .about-content {
+
+        grid-template-columns:
+            1fr;
+
+        gap:
+            35px;
+
+    }
+
+
+    .about-image {
+
+        width:
+            100%;
+
+        max-width:
+            420px;
+
+        margin:
+            0 auto;
+
+    }
+
+
+    .about-text h2 {
+
+        font-size:
+            2.2rem;
+
+    }
+
+
+    .about-text p {
+
+        font-size:
+            16px;
+
+    }
+
+
+    /* -------------------------
+       PAGE HERO
+    ------------------------- */
+
+    .page-hero {
+
+        padding:
+            125px 0 70px;
+
+    }
+
+
+    .page-hero h1 {
+
+        font-size:
+            clamp(
+                2.25rem,
+                8vw,
+                3.4rem
+            );
+
+        line-height:
+            1.14;
+
+    }
+
+
+    .page-hero p {
+
+        font-size:
+            16px;
+
+    }
+
+
+    /* -------------------------
+       CERTIFICATES
+    ------------------------- */
+
+    .certifications-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .certificate-card {
+
+        padding:
+            22px;
+
+    }
+
+
+    /* -------------------------
+       CAREER
+    ------------------------- */
+
+    .career-journey,
+    .philosophy,
+    .expertise {
+
+        padding:
+            80px 0;
+
+    }
+
+
+    .career-journey .timeline {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .career-journey .timeline-item {
+
+        padding:
+            25px;
+
+    }
+
+
+    .career-journey h2,
+    .philosophy h2,
+    .expertise h2 {
+
+        font-size:
+            2.35rem;
+
+    }
+
+
+    /* -------------------------
+       PHILOSOPHY
+    ------------------------- */
+
+    .philosophy blockquote {
+
+        padding:
+            26px;
+
+        font-size:
+            1.25rem;
+
+    }
+
+
+    .philosophy p {
+
+        font-size:
+            16px;
+
+    }
+
+
+    /* -------------------------
+       EXPERTISE
+    ------------------------- */
+
+    .expertise-grid {
+
+        grid-template-columns:
+            1fr 1fr;
+
+        gap:
+            14px;
+
+    }
+
+
+    .expertise-card {
+
+        min-height:
+            150px;
+
+        padding:
+            22px 16px;
+
+    }
+
+
+    .expertise-card h3 {
+
+        font-size:
+            1rem;
+
+    }
+
+
+    .expertise-card p {
+
+        font-size:
+            14px;
+
+    }
+
+
+    .expertise-help {
+
+        margin-top:
+            60px;
+
+    }
+
+
+    .expertise-help .expertise-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    /* -------------------------
+       CONTACT
+    ------------------------- */
+
+    .contact-grid {
+
+        grid-template-columns:
+            1fr;
+
+        gap:
+            40px;
+
+    }
+
+
+    .contact-info h2,
+    .contact-form h2 {
+
+        font-size:
+            2.2rem;
+
+    }
+
+
+    .contact-form {
+
+        padding:
+            28px;
+
+    }
+
+
+    .contact-item {
+
+        padding:
+            15px;
+
+    }
+
+
+    .contact-item span {
+
+        overflow-wrap:
+            anywhere;
+
+    }
+
+
+    /* -------------------------
+       DECORATIVE ARCS
+       Keep them at the edge.
+       They should never sit behind text.
+    ------------------------- */
+
+    #hero::after {
+
+        width:
+            440px;
+
+        height:
+            440px;
+
+        left:
+            -370px;
+
+        bottom:
+            -130px;
+
+        opacity:
+            0.28;
+
+    }
+
+
+    #hero .hero-container::before {
+
+        width:
+            350px;
+
+        height:
+            350px;
+
+        left:
+            -300px;
+
+        opacity:
+            0.18;
+
+    }
+
+
+    .solutions-hero::after {
+
+        width:
+            420px;
+
+        height:
+            420px;
+
+        right:
+            -360px;
+
+        opacity:
+            0.25;
+
+    }
+
+
+    .tools-section::after {
+
+        width:
+            400px;
+
+        height:
+            400px;
+
+        left:
+            -350px;
+
+        opacity:
+            0.24;
+
+    }
+
+
+    .about-page::before {
+
+        width:
+            400px;
+
+        height:
+            400px;
+
+        left:
+            -350px;
+
+        opacity:
+            0.22;
+
+    }
+
+
+    .certifications-section::after {
+
+        width:
+            420px;
+
+        height:
+            420px;
+
+        right:
+            -360px;
+
+        opacity:
+            0.22;
+
+    }
+
+
+    .career-journey::before {
+
+        width:
+            420px;
+
+        height:
+            420px;
+
+        left:
+            -360px;
+
+        opacity:
+            0.20;
+
+    }
+
+
+    .philosophy::after {
+
+        width:
+            420px;
+
+        height:
+            420px;
+
+        right:
+            -360px;
+
+        opacity:
+            0.20;
+
+    }
+
+
+    .expertise::after {
+
+        width:
+            440px;
+
+        height:
+            440px;
+
+        right:
+            -370px;
+
+        opacity:
+            0.20;
+
+    }
+
+
+    .contact-page::before {
+
+        width:
+            450px;
+
+        height:
+            450px;
+
+        left:
+            -380px;
+
+        opacity:
+            0.26;
+
+    }
+
+
+    .contact-page::after {
+
+        display:
+            none;
+
+    }
+
+
+    .contact-cta::after {
+
+        width:
+            360px;
+
+        height:
+            360px;
+
+        right:
+            -300px;
+
+        opacity:
+            0.18;
+
+    }
+
+
+    /* -------------------------
+       HEX PATTERNS
+    ------------------------- */
+
+    .solutions-grid-section::before,
+    .tools-section::before {
+
+        opacity:
+            0.08;
+
+        transform:
+            scale(0.85);
 
     }
 
 }
 
 
-
-/* ==========================================
+/* =========================================================
    SMALL MOBILE
-========================================== */
+   600PX
+   ========================================================= */
 
-@media (max-width:480px){
+@media (max-width: 600px) {
 
-    .container{
+    :root {
 
-        width:92%;
-
-    }
-
-    .hero-left h1{
-
-        font-size:34px;
+        --section-padding:
+            72px;
 
     }
 
-    .page-hero h1{
 
-        font-size:36px;
+    .container {
 
-    }
-
-    .tool-card{
-
-        padding:20px;
+        width:
+            92%;
 
     }
 
-    .service-card{
 
-        padding:25px;
+    /* -------------------------
+       NAV
+    ------------------------- */
+
+    .navbar {
+
+        width:
+            92%;
 
     }
 
-    .feature-card{
 
-        padding:25px;
+    .logo img {
+
+        width:
+            125px;
 
     }
 
-    .contact-form{
 
-        padding:25px;
+    .navbar > .btn-primary {
+
+        padding:
+            9px 13px;
+
+        font-size:
+            12px;
+
+    }
+
+
+    /* -------------------------
+       HERO
+    ------------------------- */
+
+    #hero {
+
+        padding:
+            115px 0 65px;
+
+    }
+
+
+    .hero-left h1 {
+
+        font-size:
+            2.45rem;
+
+    }
+
+
+    .hero-left p {
+
+        font-size:
+            15px;
+
+    }
+
+
+    #hero .hero-badges {
+
+        gap:
+            8px;
+
+    }
+
+
+    #hero .badge {
+
+        min-height:
+            92px;
+
+    }
+
+
+    #hero .badge i {
+
+        font-size:
+            21px;
+
+    }
+
+
+    #hero .badge span {
+
+        font-size:
+            12px;
+
+    }
+
+
+    /* -------------------------
+       TOOLS
+    ------------------------- */
+
+    .tools-grid {
+
+        grid-template-columns:
+            1fr 1fr;
+
+    }
+
+
+    /* -------------------------
+       EXPERTISE
+    ------------------------- */
+
+    .expertise-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .expertise-card {
+
+        min-height:
+            120px;
+
+    }
+
+
+    /* -------------------------
+       SOLUTIONS
+    ------------------------- */
+
+    .solutions-intro h1 {
+
+        font-size:
+            2.05rem;
+
+    }
+
+
+    .solution-media {
+
+        height:
+            190px;
+
+    }
+
+
+    .solution-description {
+
+        font-size:
+            14px;
+
+    }
+
+
+    /* -------------------------
+       PHILOSOPHY
+    ------------------------- */
+
+    .philosophy blockquote {
+
+        padding:
+            23px;
+
+        font-size:
+            1.15rem;
+
+    }
+
+
+    /* -------------------------
+       CONTACT
+    ------------------------- */
+
+    .contact-form {
+
+        padding:
+            22px;
+
+    }
+
+
+    /* -------------------------
+       ARCS
+    ------------------------- */
+
+    #hero::after,
+    #hero .hero-container::before,
+    .solutions-hero::after,
+    .tools-section::after,
+    .about-page::before,
+    .certifications-section::after,
+    .career-journey::before,
+    .philosophy::after,
+    .expertise::after,
+    .contact-page::before,
+    .contact-cta::after {
+
+        opacity:
+            0.15;
+
+    }
+
+
+    .solutions-grid-section::before,
+    .tools-section::before {
+
+        opacity:
+            0.045;
 
     }
 
 }
+
+
+/* =========================================================
+   VERY SMALL PHONES
+   480PX
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .career-journey,
+    .philosophy,
+    .expertise {
+
+        padding:
+            70px 0;
+
+    }
+
+
+    /* -------------------------
+       HERO
+    ------------------------- */
+
+    #hero {
+
+        padding:
+            108px 0 60px;
+
+    }
+
+
+    .hero-left h1 {
+
+        font-size:
+            2.15rem;
+
+        letter-spacing:
+            -0.03em;
+
+    }
+
+
+    .hero-left p {
+
+        font-size:
+            14px;
+
+    }
+
+
+    #hero .hero-badges {
+
+        grid-template-columns:
+            1fr 1fr;
+
+    }
+
+
+    #hero .badge {
+
+        min-height:
+            86px;
+
+        padding:
+            10px 6px;
+
+    }
+
+
+    #hero .badge span {
+
+        font-size:
+            11px;
+
+    }
+
+
+    /* -------------------------
+       PAGE HERO
+    ------------------------- */
+
+    .page-hero {
+
+        padding:
+            115px 0 60px;
+
+    }
+
+
+    .page-hero h1 {
+
+        font-size:
+            2rem;
+
+    }
+
+
+    .page-hero p {
+
+        font-size:
+            14px;
+
+    }
+
+
+    /* -------------------------
+       SOLUTIONS
+    ------------------------- */
+
+    .solutions-hero {
+
+        padding-top:
+            100px;
+
+    }
+
+
+    .solutions-intro h1 {
+
+        font-size:
+            1.9rem;
+
+    }
+
+
+    .solutions-note {
+
+        padding:
+            18px;
+
+    }
+
+
+    .solution-card {
+
+        padding:
+            11px;
+
+    }
+
+
+    .solution-media {
+
+        height:
+            175px;
+
+    }
+
+
+    /* -------------------------
+       TOOLS
+    ------------------------- */
+
+    .tool-card {
+
+        padding:
+            16px;
+
+    }
+
+
+    .tool-card img {
+
+        max-width:
+            45px;
+
+    }
+
+
+    /* -------------------------
+       CERTIFICATES
+    ------------------------- */
+
+    .certificate-card {
+
+        padding:
+            18px;
+
+    }
+
+
+    .certificate-content h3 {
+
+        font-size:
+            14px;
+
+    }
+
+
+    /* -------------------------
+       CAREER
+    ------------------------- */
+
+    .career-journey .timeline-item {
+
+        padding:
+            22px;
+
+    }
+
+
+    /* -------------------------
+       PHILOSOPHY
+    ------------------------- */
+
+    .philosophy blockquote {
+
+        padding:
+            21px;
+
+        font-size:
+            1.08rem;
+
+    }
+
+
+    /* -------------------------
+       EXPERTISE
+    ------------------------- */
+
+    .expertise-card {
+
+        padding:
+            20px;
+
+    }
+
+
+    .expertise-help {
+
+        margin-top:
+            55px;
+
+    }
+
+
+    /* -------------------------
+       CONTACT
+    ------------------------- */
+
+    .contact-info h2,
+    .contact-form h2 {
+
+        font-size:
+            2rem;
+
+    }
+
+
+    .contact-form {
+
+        padding:
+            19px;
+
+    }
+
+
+    /* -------------------------
+       DECORATION
+       Almost invisible on very
+       small screens.
+    ------------------------- */
+
+    #hero::after,
+    #hero .hero-container::before,
+    .solutions-hero::after,
+    .tools-section::after,
+    .about-page::before,
+    .certifications-section::after,
+    .career-journey::before,
+    .philosophy::after,
+    .expertise::after,
+    .contact-page::before,
+    .contact-cta::after {
+
+        opacity:
+            0.10;
+
+    }
+
+
+    .solutions-grid-section::before,
+    .tools-section::before {
+
+        opacity:
+            0.025;
+
+    }
+
+}
+
+
+/* =========================================================
+   LANDSCAPE PHONES
+   ========================================================= */
+
+@media (max-height: 600px) and (orientation: landscape) {
+
+    #hero {
+
+        min-height:
+            auto;
+
+        padding:
+            105px 0 55px;
+
+    }
+
+
+    .hero-left h1 {
+
+        font-size:
+            2.5rem;
+
+    }
+
+
+    .hero-badges {
+
+        margin-bottom:
+            25px;
+
+    }
+
+
+    .page-hero {
+
+        padding:
+            110px 0 60px;
+
+    }
+
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+
+        scroll-behavior:
+            auto !important;
+
+    }
+
+
+    *,
+    *::before,
+    *::after {
+
+        animation-duration:
+            0.01ms !important;
+
+        animation-iteration-count:
+            1 !important;
+
+        transition-duration:
+            0.01ms !important;
+
+    }
+
+}
+
+
+/* =========================================================
+   END — RESPONSIVE.CSS
+   ========================================================= */

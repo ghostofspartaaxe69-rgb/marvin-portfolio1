@@ -4,28 +4,74 @@
 
 :root {
 
-    /* ========= COLORS ========= */
+    /* ==========================================
+       COLOR SYSTEM
+    ========================================== */
 
+    /* Primary Brand Blue */
     --primary: #2563EB;
     --primary-dark: #1D4ED8;
+    --primary-light: #3B82F6;
+    --primary-bright: #60A5FA;
 
-    --background: #07111F;
-    --surface: #0F172A;
-    --card: rgba(255,255,255,.04);
+    /* Main Navy Backgrounds */
+    --background: #050D1A;
+    --background-soft: #07111F;
+    --surface: #0B1628;
+    --surface-light: #0F1C30;
 
+    /* Cards */
+    --card: rgba(255, 255, 255, 0.045);
+    --card-hover: rgba(37, 99, 235, 0.08);
+
+    /* Text */
     --white: #FFFFFF;
     --light: #F8FAFC;
-
     --text: #E5E7EB;
     --text-light: #94A3B8;
+    --text-muted: #64748B;
 
-    --border: rgba(255,255,255,.08);
+    /* Borders */
+    --border: rgba(255, 255, 255, 0.08);
+    --border-light: rgba(255, 255, 255, 0.12);
+    --border-blue: rgba(37, 99, 235, 0.35);
 
+    /* Atmospheric Blue */
+    --glow-blue: rgba(37, 99, 235, 0.18);
+    --glow-blue-soft: rgba(59, 130, 246, 0.10);
+    --glow-blue-strong: rgba(37, 99, 235, 0.28);
+
+    /* Section Gradients */
+    --gradient-blue:
+        linear-gradient(
+            135deg,
+            #2563EB 0%,
+            #1D4ED8 100%
+        );
+
+    --gradient-dark:
+        linear-gradient(
+            135deg,
+            #07111F 0%,
+            #0B1628 100%
+        );
+
+    --gradient-surface:
+        linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.055) 0%,
+            rgba(255, 255, 255, 0.02) 100%
+        );
+
+    /* Status Colors */
     --success: #22C55E;
     --warning: #FACC15;
     --danger: #EF4444;
 
-    /* ========= TYPOGRAPHY ========= */
+
+    /* ==========================================
+       TYPOGRAPHY
+    ========================================== */
 
     --font-family: "Inter", sans-serif;
 
@@ -45,62 +91,135 @@
 
     --tiny: 13px;
 
-    /* ========= FONT WEIGHT ========= */
 
-    --light-weight:300;
+    /* ==========================================
+       FONT WEIGHT
+    ========================================== */
 
-    --regular:400;
+    --light-weight: 300;
 
-    --medium:500;
+    --regular: 400;
 
-    --semibold:600;
+    --medium: 500;
 
-    --bold:700;
+    --semibold: 600;
 
-    --extra-bold:800;
+    --bold: 700;
 
-    /* ========= SPACING ========= */
+    --extra-bold: 800;
 
-    --section-padding:120px;
 
-    --container-width:1500px;
+    /* ==========================================
+       SPACING
+    ========================================== */
 
-    --gap-xs:8px;
+    --section-padding: 120px;
 
-    --gap-sm:16px;
+    --container-width: 1500px;
 
-    --gap-md:24px;
+    --gap-xs: 8px;
 
-    --gap-lg:40px;
+    --gap-sm: 16px;
 
-    --gap-xl:60px;
+    --gap-md: 24px;
 
-    --gap-xxl:100px;
+    --gap-lg: 40px;
 
-    /* ========= BORDER ========= */
+    --gap-xl: 60px;
 
-    --radius-sm:8px;
+    --gap-xxl: 100px;
 
-    --radius-md:14px;
 
-    --radius-lg:20px;
+    /* ==========================================
+       BORDER RADIUS
+    ========================================== */
 
-    --radius-xl:30px;
+    --radius-sm: 8px;
 
-    /* ========= SHADOW ========= */
+    --radius-md: 14px;
+
+    --radius-lg: 20px;
+
+    --radius-xl: 30px;
+
+
+    /* ==========================================
+       SHADOWS
+    ========================================== */
 
     --shadow-small:
-    0 10px 25px rgba(0,0,0,.15);
+        0 10px 25px rgba(0, 0, 0, 0.15);
 
     --shadow-medium:
-    0 20px 45px rgba(0,0,0,.25);
+        0 20px 45px rgba(0, 0, 0, 0.25);
 
     --shadow-large:
-    0 30px 70px rgba(0,0,0,.35);
+        0 30px 70px rgba(0, 0, 0, 0.35);
 
-    /* ========= TRANSITION ========= */
+    /* Blue Depth Shadows */
 
-    --transition:.35s ease;
+    --shadow-blue:
+        0 12px 35px rgba(37, 99, 235, 0.16);
+
+    --shadow-blue-strong:
+        0 20px 55px rgba(37, 99, 235, 0.22);
+
+
+    /* ==========================================
+       TRANSITIONS
+    ========================================== */
+
+    --transition:
+        0.35s ease;
+
+    --transition-fast:
+        0.2s ease;
+
+    --transition-slow:
+        0.6s ease;
+
+
+    /* ==========================================
+       VISUAL EFFECTS
+    ========================================== */
+
+    /* Large atmospheric background glow */
+
+    --ambient-glow:
+        radial-gradient(
+            circle,
+            rgba(37, 99, 235, 0.16) 0%,
+            rgba(37, 99, 235, 0.07) 35%,
+            rgba(37, 99, 235, 0) 70%
+        );
+
+
+    /* Smaller blue light */
+
+    --soft-blue-glow:
+        radial-gradient(
+            circle,
+            rgba(59, 130, 246, 0.12) 0%,
+            rgba(59, 130, 246, 0) 70%
+        );
+
+
+    /* Subtle white highlight */
+
+    --surface-highlight:
+        linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.06),
+            rgba(255, 255, 255, 0)
+        );
+
+
+    /* ==========================================
+       LAYOUT
+    ========================================== */
+
+    --content-width: 1200px;
+
+    --content-width-wide: 1400px;
 
 }
-
