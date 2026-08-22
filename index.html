@@ -2068,6 +2068,8 @@
 
                     <h2 id="solution-modal-title"></h2>
 
+                    <p class="solution-modal-description"></p>
+
                 </div>
 
 
@@ -2082,6 +2084,17 @@
                 </button>
 
             </div>
+
+            <div
+                class="solution-gallery-tabs"
+                role="tablist"
+                aria-label="Social Media Content type"
+                hidden>
+            </div>
+
+            <div class="solution-modal-content">
+
+                <div class="solution-gallery-content">
 
 
             <!-- GALLERY -->
@@ -2132,6 +2145,22 @@
             <div
                 class="solution-gallery-thumbnails"
                 aria-label="Preview files">
+            </div>
+
+                </div>
+
+                <aside class="solution-project-details" aria-label="Project details">
+
+                    <h3>About This Project</h3>
+
+                    <p class="solution-project-intro"></p>
+
+                    <div class="solution-project-features"></div>
+
+                    <p class="solution-project-platforms" hidden></p>
+
+                </aside>
+
             </div>
 
 
@@ -2185,7 +2214,7 @@
          PROJECT GALLERY SCRIPT
          ========================================================= -->
 
-    <script>
+    <script type="text/plain">
 
         (() => {
 
@@ -2804,6 +2833,8 @@
         })();
 
     </script>
+
+    <script src="js/project-gallery.js"></script>
 
 
 </body>
